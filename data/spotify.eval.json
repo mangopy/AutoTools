@@ -1,0 +1,2061 @@
+[
+    {
+        "query": "Make me a playlist containing three songs of Mariah Carey and name it 'Love Mariah'",
+        "solution": [
+            "GET_search",
+            "GET_me",
+            "POST_users_user_id_playlists",
+            "POST_playlists_playlist_id_tracks"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/search",
+            "GET https://api.spotify.com/v1/me",
+            "POST https://api.spotify.com/v1/users/{user_id}/playlists",
+            "POST https://api.spotify.com/v1/playlists/{playlist_id}/tracks"
+        ],
+        "api_list": [
+            "GET_search",
+            "GET_me",
+            "POST_users_user_id_playlists",
+            "POST_playlists_playlist_id_tracks",
+            "GET_me_albums",
+            "GET_me_playlists",
+            "GET_albums_id_tracks",
+            "GET_me_player_recently_played",
+            "GET_artists_id",
+            "POST_me_player_next",
+            "GET_browse_new_releases",
+            "GET_playlists_playlist_id",
+            "PUT_me_player_pause",
+            "DELETE_playlists_playlist_id_tracks",
+            "GET_albums_id",
+            "DELETE_me_following",
+            "PUT_me_following",
+            "GET_artists_id_related_artists",
+            "PUT_playlists_playlist_id",
+            "PUT_me_player_volume"
+        ],
+        "qid": 1
+    },
+    {
+        "query": "Add the first song of The Dark Side of the Moon in my playback queue",
+        "solution": [
+            "GET_search",
+            "GET_albums_id_tracks",
+            "POST_me_player_queue"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/search",
+            "GET https://api.spotify.com/v1/albums/{id}/tracks",
+            "POST https://api.spotify.com/v1/me/player/queue"
+        ],
+        "api_list": [
+            "GET_search",
+            "GET_albums_id_tracks",
+            "POST_me_player_queue",
+            "GET_browse_new_releases",
+            "GET_me_top_type",
+            "PUT_me_player_volume",
+            "DELETE_me_albums",
+            "DELETE_me_following",
+            "GET_playlists_playlist_id_tracks",
+            "PUT_me_tracks",
+            "PUT_me_player_play",
+            "PUT_me_player_repeat",
+            "GET_me_player_recently_played",
+            "PUT_me_following",
+            "GET_me_player_currently_playing",
+            "GET_me_albums",
+            "DELETE_playlists_playlist_id_tracks",
+            "GET_me_following",
+            "PUT_me_player_pause",
+            "GET_artists_id_albums"
+        ],
+        "qid": 2
+    },
+    {
+        "query": "Add Summertime Sadness by Lana Del Rey in my first playlist",
+        "solution": [
+            "GET_search",
+            "GET_me_playlists",
+            "POST_playlists_playlist_id_tracks"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/search",
+            "GET https://api.spotify.com/v1/me/playlists",
+            "POST https://api.spotify.com/v1/playlists/{playlist_id}/tracks"
+        ],
+        "api_list": [
+            "GET_search",
+            "GET_me_playlists",
+            "POST_playlists_playlist_id_tracks",
+            "GET_me_albums",
+            "PUT_me_player_play",
+            "PUT_me_player_repeat",
+            "GET_albums_id",
+            "DELETE_playlists_playlist_id_tracks",
+            "GET_me_top_type",
+            "PUT_me_tracks",
+            "POST_users_user_id_playlists",
+            "GET_me_player_recently_played",
+            "DELETE_me_following",
+            "GET_recommendations",
+            "PUT_me_albums",
+            "POST_me_player_previous",
+            "GET_me_player",
+            "DELETE_me_tracks",
+            "GET_me_player_devices",
+            "PUT_me_player_volume"
+        ],
+        "qid": 3
+    },
+    {
+        "query": "Skip to the next track and set the volume to 60",
+        "solution": [
+            "POST_me_player_next",
+            "PUT_me_player_volume"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "POST https://api.spotify.com/v1/me/player/next",
+            "PUT https://api.spotify.com/v1/me/player/volume"
+        ],
+        "api_list": [
+            "POST_me_player_next",
+            "PUT_me_player_volume",
+            "PUT_me_following",
+            "GET_me_following",
+            "GET_me_player_devices",
+            "GET_artists_id_top_tracks",
+            "DELETE_me_following",
+            "PUT_me_albums",
+            "GET_me_top_type",
+            "POST_me_player_queue",
+            "GET_recommendations",
+            "PUT_me_player_play",
+            "GET_artists_id_related_artists",
+            "GET_me",
+            "GET_me_player_currently_playing",
+            "POST_me_player_previous",
+            "GET_me_player",
+            "GET_me_player_recently_played",
+            "GET_playlists_playlist_id_tracks",
+            "PUT_playlists_playlist_id"
+        ],
+        "qid": 4
+    },
+    {
+        "query": "Put the song now being played into My Music",
+        "solution": [
+            "GET_me_player_currently_playing",
+            "PUT_me_tracks"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/player/currently-playing",
+            "PUT https://api.spotify.com/v1/me/tracks"
+        ],
+        "api_list": [
+            "GET_me_player_currently_playing",
+            "PUT_me_tracks",
+            "GET_me_player",
+            "GET_artists_id_top_tracks",
+            "GET_me_player_queue",
+            "POST_users_user_id_playlists",
+            "PUT_playlists_playlist_id",
+            "GET_tracks_id",
+            "DELETE_me_tracks",
+            "GET_artists_id",
+            "PUT_me_player_pause",
+            "PUT_me_player_repeat",
+            "PUT_me_player_volume",
+            "DELETE_me_albums",
+            "POST_playlists_playlist_id_tracks",
+            "GET_artists_id_related_artists",
+            "GET_search",
+            "GET_me_albums",
+            "POST_me_player_previous",
+            "GET_me_playlists"
+        ],
+        "qid": 5
+    },
+    {
+        "query": "Append the first song of the newest album of my following first artist to my player queue",
+        "solution": [
+            "GET_me_following",
+            "GET_artists_id_albums",
+            "GET_albums_id_tracks",
+            "POST_me_player_queue"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/following",
+            "GET https://api.spotify.com/v1/artists/{id}/albums",
+            "GET https://api.spotify.com/v1/albums/{id}/tracks",
+            "POST https://api.spotify.com/v1/me/player/queue"
+        ],
+        "api_list": [
+            "GET_me_following",
+            "GET_artists_id_albums",
+            "GET_albums_id_tracks",
+            "POST_me_player_queue",
+            "GET_me_playlists",
+            "GET_playlists_playlist_id",
+            "POST_me_player_previous",
+            "POST_users_user_id_playlists",
+            "GET_me",
+            "DELETE_me_albums",
+            "GET_search",
+            "PUT_me_player_pause",
+            "DELETE_me_following",
+            "PUT_me_player_volume",
+            "GET_tracks_id",
+            "PUT_me_following",
+            "DELETE_playlists_playlist_id_tracks",
+            "GET_me_player",
+            "GET_me_tracks",
+            "POST_me_player_next"
+        ],
+        "qid": 6
+    },
+    {
+        "query": "Follow the artist of the song now playing",
+        "solution": [
+            "GET_me_player_currently_playing",
+            "GET_tracks_id",
+            "PUT_me_following"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/player/currently-playing",
+            "GET https://api.spotify.com/v1/tracks/{id}",
+            "PUT https://api.spotify.com/v1/me/following"
+        ],
+        "api_list": [
+            "GET_me_player_currently_playing",
+            "GET_tracks_id",
+            "PUT_me_following",
+            "PUT_me_player_play",
+            "GET_me_albums",
+            "GET_me_player_recently_played",
+            "GET_artists_id",
+            "GET_me",
+            "DELETE_me_tracks",
+            "GET_browse_new_releases",
+            "GET_recommendations",
+            "PUT_me_player_repeat",
+            "POST_me_player_queue",
+            "PUT_me_tracks",
+            "GET_me_playlists",
+            "GET_search",
+            "GET_playlists_playlist_id_tracks",
+            "POST_users_user_id_playlists",
+            "POST_playlists_playlist_id_tracks",
+            "PUT_me_player_volume"
+        ],
+        "qid": 7
+    },
+    {
+        "query": "Play a song from Taylor Swift's newest album",
+        "solution": [
+            "GET_search",
+            "GET_artists_id_albums",
+            "PUT_me_player_play"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/search",
+            "GET https://api.spotify.com/v1/artists/{id}/albums",
+            "PUT https://api.spotify.com/v1/me/player/play"
+        ],
+        "api_list": [
+            "GET_search",
+            "GET_artists_id_albums",
+            "PUT_me_player_play",
+            "GET_me_following",
+            "GET_me_top_type",
+            "POST_me_player_previous",
+            "GET_playlists_playlist_id",
+            "GET_me_player_currently_playing",
+            "GET_me_albums",
+            "PUT_me_following",
+            "GET_albums_id",
+            "GET_tracks_id",
+            "PUT_me_player_repeat",
+            "DELETE_me_tracks",
+            "PUT_playlists_playlist_id",
+            "GET_me_player",
+            "DELETE_me_albums",
+            "GET_recommendations",
+            "GET_albums_id_tracks",
+            "POST_me_player_queue"
+        ],
+        "qid": 8
+    },
+    {
+        "query": "play me some quiet songs",
+        "solution": [
+            "GET_search",
+            "PUT_me_player_play"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/search",
+            "PUT https://api.spotify.com/v1/me/player/play"
+        ],
+        "api_list": [
+            "GET_search",
+            "PUT_me_player_play",
+            "GET_artists_id_top_tracks",
+            "PUT_me_player_repeat",
+            "POST_playlists_playlist_id_tracks",
+            "PUT_me_player_volume",
+            "GET_me_player_queue",
+            "GET_me_player_currently_playing",
+            "POST_me_player_queue",
+            "POST_me_player_next",
+            "GET_artists_id_albums",
+            "POST_users_user_id_playlists",
+            "GET_playlists_playlist_id_tracks",
+            "GET_me_player_recently_played",
+            "PUT_me_following",
+            "GET_artists_id_related_artists",
+            "GET_me_player",
+            "GET_tracks_id",
+            "GET_browse_new_releases",
+            "GET_recommendations"
+        ],
+        "qid": 9
+    },
+    {
+        "query": "Follow the artist of the first song recently played",
+        "solution": [
+            "GET_me_player_currently_playing",
+            "GET_tracks_id",
+            "PUT_me_following"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/player/currently-playing",
+            "GET https://api.spotify.com/v1/tracks/{id}",
+            "PUT https://api.spotify.com/v1/me/following"
+        ],
+        "api_list": [
+            "GET_me_player_currently_playing",
+            "GET_tracks_id",
+            "PUT_me_following",
+            "DELETE_playlists_playlist_id_tracks",
+            "GET_me_tracks",
+            "GET_me_top_type",
+            "PUT_playlists_playlist_id",
+            "GET_me_following",
+            "GET_me_playlists",
+            "POST_me_player_previous",
+            "POST_users_user_id_playlists",
+            "GET_me_player_queue",
+            "GET_me_player",
+            "PUT_me_albums",
+            "PUT_me_player_pause",
+            "GET_artists_id_related_artists",
+            "GET_playlists_playlist_id",
+            "POST_me_player_queue",
+            "PUT_me_tracks",
+            "GET_browse_new_releases"
+        ],
+        "qid": 10
+    },
+    {
+        "query": "Switch to the next song and set the single track repeat mode",
+        "solution": [
+            "POST_me_player_next",
+            "PUT_me_player_repeat"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "POST https://api.spotify.com/v1/me/player/next",
+            "PUT https://api.spotify.com/v1/me/player/repeat"
+        ],
+        "api_list": [
+            "POST_me_player_next",
+            "PUT_me_player_repeat",
+            "GET_me_player_devices",
+            "GET_me_tracks",
+            "GET_artists_id_related_artists",
+            "GET_me_player_recently_played",
+            "GET_me_albums",
+            "GET_tracks_id",
+            "GET_me_following",
+            "GET_playlists_playlist_id",
+            "PUT_me_albums",
+            "PUT_me_tracks",
+            "GET_search",
+            "GET_me_playlists",
+            "GET_me_player_queue",
+            "GET_browse_new_releases",
+            "PUT_me_player_play",
+            "PUT_me_player_pause",
+            "GET_me_top_type",
+            "GET_me"
+        ],
+        "qid": 11
+    },
+    {
+        "query": "Save Jay Chou's album Mojito",
+        "solution": [
+            "GET_search",
+            "PUT_me_albums"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/search",
+            "PUT https://api.spotify.com/v1/me/albums"
+        ],
+        "api_list": [
+            "GET_search",
+            "PUT_me_albums",
+            "GET_me_albums",
+            "GET_playlists_playlist_id",
+            "GET_me_top_type",
+            "GET_me_playlists",
+            "GET_me",
+            "GET_artists_id",
+            "PUT_me_player_play",
+            "DELETE_playlists_playlist_id_tracks",
+            "PUT_me_following",
+            "DELETE_me_following",
+            "GET_albums_id_tracks",
+            "GET_me_player_devices",
+            "GET_me_player_currently_playing",
+            "GET_artists_id_top_tracks",
+            "PUT_me_player_repeat",
+            "GET_me_tracks",
+            "GET_me_player_recently_played",
+            "GET_me_following"
+        ],
+        "qid": 12
+    },
+    {
+        "query": "Rename my first playlist to \"My First\"",
+        "solution": [
+            "GET_me_playlists",
+            "PUT_playlists_playlist_id"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/playlists",
+            "PUT https://api.spotify.com/v1/playlists/{playlist_id}"
+        ],
+        "api_list": [
+            "GET_me_playlists",
+            "PUT_playlists_playlist_id",
+            "GET_albums_id_tracks",
+            "PUT_me_player_repeat",
+            "GET_me_player_devices",
+            "PUT_me_following",
+            "GET_artists_id_top_tracks",
+            "GET_playlists_playlist_id_tracks",
+            "POST_playlists_playlist_id_tracks",
+            "GET_me_player_currently_playing",
+            "POST_me_player_queue",
+            "GET_artists_id_related_artists",
+            "GET_me_top_type",
+            "POST_users_user_id_playlists",
+            "PUT_me_player_volume",
+            "GET_browse_new_releases",
+            "POST_me_player_previous",
+            "GET_me_albums",
+            "PUT_me_player_play",
+            "GET_me_following"
+        ],
+        "qid": 13
+    },
+    {
+        "query": "Remove following from the artist of the currently playing music",
+        "solution": [
+            "GET_me_player_currently_playing",
+            "GET_tracks_id",
+            "DELETE_me_following"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/player/currently-playing",
+            "GET https://api.spotify.com/v1/tracks/{id}",
+            "DELETE https://api.spotify.com/v1/me/following"
+        ],
+        "api_list": [
+            "GET_me_player_currently_playing",
+            "GET_tracks_id",
+            "DELETE_me_following",
+            "GET_albums_id",
+            "GET_me_player_queue",
+            "GET_me",
+            "GET_browse_new_releases",
+            "POST_playlists_playlist_id_tracks",
+            "GET_me_player_devices",
+            "GET_playlists_playlist_id_tracks",
+            "GET_playlists_playlist_id",
+            "GET_recommendations",
+            "PUT_me_following",
+            "PUT_me_player_play",
+            "GET_artists_id_top_tracks",
+            "GET_me_player_recently_played",
+            "POST_me_player_next",
+            "PUT_me_player_volume",
+            "PUT_me_tracks",
+            "GET_artists_id"
+        ],
+        "qid": 14
+    },
+    {
+        "query": "Pause playback, turn down the volume and resume playing",
+        "solution": [
+            "PUT_me_player_pause",
+            "PUT_me_player_volume",
+            "PUT_me_player_play"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "PUT https://api.spotify.com/v1/me/player/pause",
+            "PUT https://api.spotify.com/v1/me/player/volume",
+            "PUT https://api.spotify.com/v1/me/player/play"
+        ],
+        "api_list": [
+            "PUT_me_player_pause",
+            "PUT_me_player_volume",
+            "PUT_me_player_play",
+            "GET_me_player_recently_played",
+            "GET_me_player_devices",
+            "GET_artists_id_albums",
+            "GET_me_player_currently_playing",
+            "DELETE_playlists_playlist_id_tracks",
+            "DELETE_me_albums",
+            "GET_me_top_type",
+            "POST_me_player_previous",
+            "DELETE_me_following",
+            "GET_artists_id_related_artists",
+            "GET_artists_id",
+            "GET_playlists_playlist_id_tracks",
+            "GET_tracks_id",
+            "GET_recommendations",
+            "GET_me",
+            "GET_me_playlists",
+            "GET_search"
+        ],
+        "qid": 15
+    },
+    {
+        "query": "Add songs from the current playing queue to a new playlist called \"Current\"",
+        "solution": [
+            "GET_me_player_queue",
+            "GET_me",
+            "POST_users_user_id_playlists",
+            "PUT_playlists_playlist_id"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/player/queue",
+            "GET https://api.spotify.com/v1/me",
+            "POST https://api.spotify.com/v1/users/{user_id}/playlists",
+            "PUT https://api.spotify.com/v1/playlists/{playlist_id}"
+        ],
+        "api_list": [
+            "GET_me_player_queue",
+            "GET_me",
+            "POST_users_user_id_playlists",
+            "PUT_playlists_playlist_id",
+            "PUT_me_player_repeat",
+            "GET_playlists_playlist_id_tracks",
+            "PUT_me_albums",
+            "GET_albums_id",
+            "GET_artists_id_albums",
+            "GET_browse_new_releases",
+            "PUT_me_player_volume",
+            "DELETE_me_tracks",
+            "GET_me_player_currently_playing",
+            "GET_me_player",
+            "GET_me_albums",
+            "GET_me_tracks",
+            "GET_tracks_id",
+            "POST_me_player_previous",
+            "GET_artists_id_top_tracks",
+            "DELETE_playlists_playlist_id_tracks"
+        ],
+        "qid": 16
+    },
+    {
+        "query": "What is the name of the song I playing right now?",
+        "solution": [
+            "GET_me_player_currently_playing"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/player/currently-playing"
+        ],
+        "api_list": [
+            "GET_me_player_currently_playing",
+            "PUT_me_player_repeat",
+            "POST_me_player_previous",
+            "PUT_me_player_pause",
+            "GET_browse_new_releases",
+            "GET_artists_id_top_tracks",
+            "POST_users_user_id_playlists",
+            "GET_me_tracks",
+            "GET_albums_id_tracks",
+            "DELETE_playlists_playlist_id_tracks",
+            "GET_search",
+            "GET_me_player_queue",
+            "GET_me_player_devices",
+            "GET_me",
+            "GET_artists_id_albums",
+            "POST_playlists_playlist_id_tracks",
+            "PUT_playlists_playlist_id",
+            "PUT_me_player_play",
+            "GET_me_player_recently_played",
+            "GET_tracks_id"
+        ],
+        "qid": 17
+    },
+    {
+        "query": "Remove the first album from my music",
+        "solution": [
+            "GET_me_albums",
+            "DELETE_me_albums"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/albums",
+            "DELETE https://api.spotify.com/v1/me/albums"
+        ],
+        "api_list": [
+            "GET_me_albums",
+            "DELETE_me_albums",
+            "POST_users_user_id_playlists",
+            "GET_playlists_playlist_id",
+            "PUT_me_following",
+            "DELETE_me_tracks",
+            "GET_me_top_type",
+            "GET_playlists_playlist_id_tracks",
+            "GET_me_player_recently_played",
+            "PUT_me_player_play",
+            "PUT_me_player_volume",
+            "GET_me",
+            "PUT_me_player_pause",
+            "GET_me_player",
+            "PUT_me_albums",
+            "GET_artists_id_top_tracks",
+            "GET_tracks_id",
+            "GET_search",
+            "GET_me_player_currently_playing",
+            "GET_artists_id"
+        ],
+        "qid": 18
+    },
+    {
+        "query": "Show me the albums I saved",
+        "solution": [
+            "GET_me_albums"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/albums"
+        ],
+        "api_list": [
+            "GET_me_albums",
+            "GET_playlists_playlist_id",
+            "PUT_me_player_pause",
+            "GET_me_top_type",
+            "GET_artists_id_related_artists",
+            "POST_me_player_previous",
+            "DELETE_me_albums",
+            "GET_artists_id_top_tracks",
+            "GET_me_playlists",
+            "PUT_me_player_play",
+            "GET_me_tracks",
+            "GET_recommendations",
+            "PUT_me_player_repeat",
+            "GET_tracks_id",
+            "DELETE_playlists_playlist_id_tracks",
+            "POST_me_player_queue",
+            "GET_me",
+            "PUT_me_following",
+            "GET_playlists_playlist_id_tracks",
+            "GET_me_following"
+        ],
+        "qid": 19
+    },
+    {
+        "query": "Follow the artist of the song which is playing right now.",
+        "solution": [
+            "GET_me_player_currently_playing",
+            "GET_tracks_id",
+            "PUT_me_following"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/player/currently-playing",
+            "GET https://api.spotify.com/v1/tracks/{id}",
+            "PUT https://api.spotify.com/v1/me/following"
+        ],
+        "api_list": [
+            "GET_me_player_currently_playing",
+            "GET_tracks_id",
+            "PUT_me_following",
+            "POST_me_player_queue",
+            "GET_search",
+            "POST_users_user_id_playlists",
+            "GET_me_following",
+            "DELETE_me_albums",
+            "GET_me",
+            "PUT_me_albums",
+            "PUT_me_player_repeat",
+            "POST_playlists_playlist_id_tracks",
+            "GET_me_player_queue",
+            "GET_me_playlists",
+            "PUT_me_player_play",
+            "PUT_me_tracks",
+            "GET_albums_id_tracks",
+            "DELETE_me_following",
+            "GET_me_player_recently_played",
+            "PUT_playlists_playlist_id"
+        ],
+        "qid": 20
+    },
+    {
+        "query": "Recommend me some tracks with the same genre of the music currently playing",
+        "solution": [
+            "GET_me_player_currently_playing",
+            "GET_search"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/player/currently-playing",
+            "GET https://api.spotify.com/v1/search"
+        ],
+        "api_list": [
+            "GET_me_player_currently_playing",
+            "GET_search",
+            "DELETE_me_tracks",
+            "GET_artists_id",
+            "POST_me_player_previous",
+            "GET_albums_id_tracks",
+            "POST_me_player_queue",
+            "GET_albums_id",
+            "DELETE_me_following",
+            "POST_playlists_playlist_id_tracks",
+            "GET_me_albums",
+            "GET_me",
+            "PUT_playlists_playlist_id",
+            "GET_playlists_playlist_id",
+            "GET_playlists_playlist_id_tracks",
+            "POST_users_user_id_playlists",
+            "GET_me_player",
+            "PUT_me_player_repeat",
+            "GET_browse_new_releases",
+            "PUT_me_following"
+        ],
+        "qid": 21
+    },
+    {
+        "query": "Append the first track in The Beatle's newest album to my 'My Rock' playlist",
+        "solution": [
+            "GET_search",
+            "GET_artists_id_albums",
+            "POST_playlists_playlist_id_tracks",
+            "PUT_playlists_playlist_id"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/search",
+            "GET https://api.spotify.com/v1/artists/{id}/albums",
+            "POST https://api.spotify.com/v1/playlists/{playlist_id}/tracks",
+            "PUT https://api.spotify.com/v1/playlists/{playlist_id}"
+        ],
+        "api_list": [
+            "GET_search",
+            "GET_artists_id_albums",
+            "POST_playlists_playlist_id_tracks",
+            "PUT_playlists_playlist_id",
+            "GET_me_albums",
+            "GET_me_following",
+            "PUT_me_player_pause",
+            "GET_albums_id",
+            "GET_tracks_id",
+            "GET_me_playlists",
+            "GET_me_player_currently_playing",
+            "POST_users_user_id_playlists",
+            "GET_me_player",
+            "GET_playlists_playlist_id",
+            "GET_artists_id",
+            "GET_me",
+            "GET_me_top_type",
+            "GET_me_player_devices",
+            "GET_playlists_playlist_id_tracks",
+            "GET_artists_id_related_artists"
+        ],
+        "qid": 22
+    },
+    {
+        "query": "Make top tracks of Taylor Swift a new playlist named \"Love Taylor\"",
+        "solution": [
+            "GET_artists_id_top_tracks",
+            "GET_me",
+            "POST_users_user_id_playlists",
+            "POST_playlists_playlist_id_tracks"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/artists/{id}/top-tracks",
+            "GET https://api.spotify.com/v1/me",
+            "POST https://api.spotify.com/v1/users/{user_id}/playlists",
+            "POST https://api.spotify.com/v1/playlists/{playlist_id}/tracks"
+        ],
+        "api_list": [
+            "GET_artists_id_top_tracks",
+            "GET_me",
+            "POST_users_user_id_playlists",
+            "POST_playlists_playlist_id_tracks",
+            "GET_artists_id",
+            "GET_me_player_queue",
+            "GET_me_player_devices",
+            "GET_artists_id_albums",
+            "GET_albums_id",
+            "GET_recommendations",
+            "DELETE_playlists_playlist_id_tracks",
+            "PUT_me_player_play",
+            "GET_search",
+            "PUT_me_player_repeat",
+            "DELETE_me_albums",
+            "GET_me_player_currently_playing",
+            "GET_artists_id_related_artists",
+            "GET_browse_new_releases",
+            "GET_me_tracks",
+            "PUT_me_albums"
+        ],
+        "qid": 23
+    },
+    {
+        "query": "Who is my favorite artist?",
+        "solution": [
+            "GET_me_top_type"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/top/{type}"
+        ],
+        "api_list": [
+            "GET_me_top_type",
+            "GET_me_player_recently_played",
+            "GET_me_albums",
+            "GET_me",
+            "PUT_me_albums",
+            "GET_albums_id",
+            "POST_me_player_previous",
+            "GET_me_player_currently_playing",
+            "DELETE_me_albums",
+            "GET_artists_id_related_artists",
+            "GET_me_player_devices",
+            "PUT_me_player_play",
+            "DELETE_playlists_playlist_id_tracks",
+            "GET_recommendations",
+            "GET_me_player",
+            "GET_tracks_id",
+            "DELETE_me_tracks",
+            "POST_me_player_queue",
+            "GET_playlists_playlist_id_tracks",
+            "GET_artists_id_albums"
+        ],
+        "qid": 24
+    },
+    {
+        "query": "Give me a song of my favorite artist",
+        "solution": [
+            "GET_me_top_type",
+            "GET_artists_id"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/top/{type}",
+            "GET https://api.spotify.com/v1/artists/{id}"
+        ],
+        "api_list": [
+            "GET_me_top_type",
+            "GET_artists_id",
+            "GET_tracks_id",
+            "DELETE_me_tracks",
+            "PUT_me_player_play",
+            "GET_artists_id_top_tracks",
+            "GET_playlists_playlist_id_tracks",
+            "DELETE_playlists_playlist_id_tracks",
+            "GET_playlists_playlist_id",
+            "GET_artists_id_related_artists",
+            "GET_me_following",
+            "GET_me_albums",
+            "GET_albums_id_tracks",
+            "POST_me_player_previous",
+            "POST_me_player_queue",
+            "GET_me_player_queue",
+            "PUT_playlists_playlist_id",
+            "GET_me_player_currently_playing",
+            "PUT_me_player_volume",
+            "PUT_me_tracks"
+        ],
+        "qid": 25
+    },
+    {
+        "query": "Delete all music from my 'My R&B' playlist and rename it as 'Test'",
+        "solution": [
+            "GET_me_playlists",
+            "DELETE_playlists_playlist_id_tracks",
+            "PUT_playlists_playlist_id"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/playlists",
+            "DELETE https://api.spotify.com/v1/playlists/{playlist_id}/tracks",
+            "PUT https://api.spotify.com/v1/playlists/{playlist_id}"
+        ],
+        "api_list": [
+            "GET_me_playlists",
+            "DELETE_playlists_playlist_id_tracks",
+            "PUT_playlists_playlist_id",
+            "POST_playlists_playlist_id_tracks",
+            "GET_artists_id_albums",
+            "GET_albums_id",
+            "GET_artists_id_top_tracks",
+            "GET_playlists_playlist_id_tracks",
+            "POST_me_player_next",
+            "POST_me_player_queue",
+            "DELETE_me_albums",
+            "GET_me_player",
+            "PUT_me_tracks",
+            "GET_me_player_currently_playing",
+            "PUT_me_player_repeat",
+            "DELETE_me_tracks",
+            "GET_artists_id",
+            "DELETE_me_following",
+            "PUT_me_following",
+            "GET_me_following"
+        ],
+        "qid": 26
+    },
+    {
+        "query": "show me the album information of the song currently playing",
+        "solution": [
+            "GET_me_player_currently_playing",
+            "GET_tracks_id"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/player/currently-playing",
+            "GET https://api.spotify.com/v1/tracks/{id}"
+        ],
+        "api_list": [
+            "GET_me_player_currently_playing",
+            "GET_tracks_id",
+            "GET_recommendations",
+            "POST_me_player_previous",
+            "POST_users_user_id_playlists",
+            "GET_me_tracks",
+            "GET_me_albums",
+            "DELETE_playlists_playlist_id_tracks",
+            "PUT_me_following",
+            "DELETE_me_tracks",
+            "PUT_me_player_play",
+            "PUT_me_albums",
+            "GET_me_player_queue",
+            "GET_browse_new_releases",
+            "GET_me_player",
+            "GET_playlists_playlist_id",
+            "PUT_me_player_pause",
+            "PUT_playlists_playlist_id",
+            "GET_playlists_playlist_id_tracks",
+            "GET_me"
+        ],
+        "qid": 27
+    },
+    {
+        "query": "Pause device 'My PC' if it is now playing something",
+        "solution": [
+            "GET_me_player",
+            "PUT_me_player_pause"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/player",
+            "PUT https://api.spotify.com/v1/me/player/pause"
+        ],
+        "api_list": [
+            "GET_me_player",
+            "PUT_me_player_pause",
+            "GET_playlists_playlist_id_tracks",
+            "GET_albums_id_tracks",
+            "GET_tracks_id",
+            "POST_me_player_next",
+            "DELETE_playlists_playlist_id_tracks",
+            "POST_me_player_queue",
+            "GET_browse_new_releases",
+            "GET_me_albums",
+            "PUT_me_player_repeat",
+            "GET_me_player_currently_playing",
+            "GET_playlists_playlist_id",
+            "POST_playlists_playlist_id_tracks",
+            "PUT_me_following",
+            "GET_me_player_queue",
+            "GET_search",
+            "GET_me_playlists",
+            "DELETE_me_following",
+            "PUT_me_albums"
+        ],
+        "qid": 28
+    },
+    {
+        "query": "pause current song and resume it on 'My PC'",
+        "solution": [
+            "PUT_me_player_pause",
+            "GET_me_player_devices",
+            "PUT_me_player_play"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "PUT https://api.spotify.com/v1/me/player/pause",
+            "GET https://api.spotify.com/v1/me/player/devices",
+            "PUT https://api.spotify.com/v1/me/player/play"
+        ],
+        "api_list": [
+            "PUT_me_player_pause",
+            "GET_me_player_devices",
+            "PUT_me_player_play",
+            "GET_me_top_type",
+            "GET_me_albums",
+            "GET_recommendations",
+            "GET_me_playlists",
+            "GET_me_following",
+            "GET_me_player_currently_playing",
+            "GET_search",
+            "GET_artists_id",
+            "POST_playlists_playlist_id_tracks",
+            "DELETE_playlists_playlist_id_tracks",
+            "POST_me_player_previous",
+            "PUT_me_tracks",
+            "GET_albums_id",
+            "PUT_me_following",
+            "POST_users_user_id_playlists",
+            "GET_me_tracks",
+            "GET_artists_id_top_tracks"
+        ],
+        "qid": 29
+    },
+    {
+        "query": "show me the name of Maroon 5's newest album",
+        "solution": [
+            "GET_search",
+            "GET_artists_id_albums"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/search",
+            "GET https://api.spotify.com/v1/artists/{id}/albums"
+        ],
+        "api_list": [
+            "GET_search",
+            "GET_artists_id_albums",
+            "GET_artists_id_related_artists",
+            "GET_me_top_type",
+            "GET_me_albums",
+            "GET_artists_id_top_tracks",
+            "GET_me_following",
+            "POST_me_player_next",
+            "GET_me_player_queue",
+            "GET_me",
+            "GET_me_player_devices",
+            "PUT_me_player_volume",
+            "DELETE_me_tracks",
+            "POST_me_player_previous",
+            "DELETE_me_following",
+            "DELETE_me_albums",
+            "GET_artists_id",
+            "GET_playlists_playlist_id_tracks",
+            "PUT_me_player_play",
+            "GET_me_tracks"
+        ],
+        "qid": 30
+    },
+    {
+        "query": "Recommend more artists base on my first following artist",
+        "solution": [
+            "GET_me_following",
+            "GET_artists_id_related_artists"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/following",
+            "GET https://api.spotify.com/v1/artists/{id}/related-artists"
+        ],
+        "api_list": [
+            "GET_me_following",
+            "GET_artists_id_related_artists",
+            "GET_me_player",
+            "PUT_me_tracks",
+            "POST_me_player_next",
+            "POST_me_player_previous",
+            "POST_playlists_playlist_id_tracks",
+            "PUT_me_player_play",
+            "GET_playlists_playlist_id_tracks",
+            "PUT_me_player_volume",
+            "GET_me_player_devices",
+            "GET_tracks_id",
+            "GET_me_top_type",
+            "PUT_me_albums",
+            "GET_me_playlists",
+            "GET_me_albums",
+            "GET_artists_id",
+            "GET_me_player_recently_played",
+            "PUT_me_player_repeat",
+            "DELETE_playlists_playlist_id_tracks"
+        ],
+        "qid": 31
+    },
+    {
+        "query": "Unfollow the artist of the song now playing and skip to the next song",
+        "solution": [
+            "GET_me_player_currently_playing",
+            "DELETE_me_following",
+            "POST_me_player_next"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/player/currently-playing",
+            "DELETE https://api.spotify.com/v1/me/following",
+            "POST https://api.spotify.com/v1/me/player/next"
+        ],
+        "api_list": [
+            "GET_me_player_currently_playing",
+            "DELETE_me_following",
+            "POST_me_player_next",
+            "POST_me_player_queue",
+            "POST_playlists_playlist_id_tracks",
+            "GET_recommendations",
+            "POST_users_user_id_playlists",
+            "GET_me",
+            "POST_me_player_previous",
+            "GET_me_player_queue",
+            "GET_me_playlists",
+            "PUT_me_tracks",
+            "GET_search",
+            "GET_me_tracks",
+            "GET_tracks_id",
+            "GET_artists_id_related_artists",
+            "GET_artists_id",
+            "GET_me_player",
+            "GET_playlists_playlist_id_tracks",
+            "PUT_me_player_play"
+        ],
+        "qid": 32
+    },
+    {
+        "query": "Follow Taylor Swift",
+        "solution": [
+            "GET_search",
+            "PUT_me_following"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/search",
+            "PUT https://api.spotify.com/v1/me/following"
+        ],
+        "api_list": [
+            "GET_search",
+            "PUT_me_following",
+            "PUT_me_player_play",
+            "GET_me_playlists",
+            "GET_me_player_recently_played",
+            "POST_playlists_playlist_id_tracks",
+            "DELETE_me_following",
+            "POST_me_player_queue",
+            "GET_me_following",
+            "PUT_me_tracks",
+            "GET_me_player_queue",
+            "PUT_playlists_playlist_id",
+            "GET_recommendations",
+            "GET_me_top_type",
+            "GET_playlists_playlist_id_tracks",
+            "GET_artists_id_related_artists",
+            "PUT_me_player_repeat",
+            "GET_me_player_devices",
+            "GET_me_albums",
+            "DELETE_me_albums"
+        ],
+        "qid": 33
+    },
+    {
+        "query": "Make my top tracks a new playlist called 'My Top'",
+        "solution": [
+            "GET_me_top_type",
+            "GET_me",
+            "POST_users_user_id_playlists",
+            "POST_playlists_playlist_id_tracks"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/top/{type}",
+            "GET https://api.spotify.com/v1/me",
+            "POST https://api.spotify.com/v1/users/{user_id}/playlists",
+            "POST https://api.spotify.com/v1/playlists/{playlist_id}/tracks"
+        ],
+        "api_list": [
+            "GET_me_top_type",
+            "GET_me",
+            "POST_users_user_id_playlists",
+            "POST_playlists_playlist_id_tracks",
+            "DELETE_me_tracks",
+            "GET_me_tracks",
+            "PUT_me_following",
+            "GET_me_player_currently_playing",
+            "GET_playlists_playlist_id_tracks",
+            "PUT_me_tracks",
+            "GET_me_albums",
+            "GET_artists_id_albums",
+            "DELETE_playlists_playlist_id_tracks",
+            "GET_me_following",
+            "GET_me_player_devices",
+            "GET_artists_id_top_tracks",
+            "PUT_me_player_repeat",
+            "PUT_me_player_play",
+            "GET_search",
+            "GET_albums_id"
+        ],
+        "qid": 34
+    },
+    {
+        "query": "Remove the first song from my playlist 'My Rock'",
+        "solution": [
+            "GET_me_playlists",
+            "GET_playlists_playlist_id_tracks",
+            "DELETE_playlists_playlist_id_tracks"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/playlists",
+            "GET https://api.spotify.com/v1/playlists/{playlist_id}/tracks",
+            "DELETE https://api.spotify.com/v1/playlists/{playlist_id}/tracks"
+        ],
+        "api_list": [
+            "GET_me_playlists",
+            "GET_playlists_playlist_id_tracks",
+            "DELETE_playlists_playlist_id_tracks",
+            "GET_me_following",
+            "GET_me_albums",
+            "POST_playlists_playlist_id_tracks",
+            "GET_search",
+            "GET_artists_id_related_artists",
+            "GET_artists_id",
+            "PUT_playlists_playlist_id",
+            "PUT_me_player_pause",
+            "GET_me_player",
+            "GET_playlists_playlist_id",
+            "PUT_me_albums",
+            "GET_albums_id",
+            "GET_me_top_type",
+            "GET_recommendations",
+            "GET_me_player_recently_played",
+            "POST_me_player_next",
+            "PUT_me_tracks"
+        ],
+        "qid": 35
+    },
+    {
+        "query": "add top songs of the first of my following artist to My Music",
+        "solution": [
+            "GET_me_following",
+            "GET_artists_id_top_tracks",
+            "PUT_me_tracks"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/following",
+            "GET https://api.spotify.com/v1/artists/{id}/top-tracks",
+            "PUT https://api.spotify.com/v1/me/tracks"
+        ],
+        "api_list": [
+            "GET_me_following",
+            "GET_artists_id_top_tracks",
+            "PUT_me_tracks",
+            "PUT_me_player_volume",
+            "GET_me_player",
+            "GET_me_player_recently_played",
+            "GET_search",
+            "POST_me_player_queue",
+            "GET_me_albums",
+            "PUT_me_player_repeat",
+            "POST_me_player_previous",
+            "GET_artists_id_albums",
+            "GET_me",
+            "GET_browse_new_releases",
+            "GET_albums_id_tracks",
+            "DELETE_me_albums",
+            "PUT_me_player_play",
+            "POST_users_user_id_playlists",
+            "GET_recommendations",
+            "PUT_me_albums"
+        ],
+        "qid": 36
+    },
+    {
+        "query": "Follow all the artists involved in the playlist 'My R&B'",
+        "solution": [
+            "GET_me",
+            "GET_playlists_playlist_id",
+            "PUT_me_following"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me",
+            "GET https://api.spotify.com/v1/playlists/{playlist_id}",
+            "PUT https://api.spotify.com/v1/me/following"
+        ],
+        "api_list": [
+            "GET_me",
+            "GET_playlists_playlist_id",
+            "PUT_me_following",
+            "GET_artists_id",
+            "PUT_me_albums",
+            "GET_me_playlists",
+            "GET_me_albums",
+            "PUT_me_player_play",
+            "PUT_me_player_volume",
+            "GET_albums_id",
+            "GET_recommendations",
+            "GET_me_player_currently_playing",
+            "DELETE_playlists_playlist_id_tracks",
+            "PUT_me_player_repeat",
+            "GET_me_following",
+            "GET_tracks_id",
+            "POST_playlists_playlist_id_tracks",
+            "GET_playlists_playlist_id_tracks",
+            "GET_me_player_queue",
+            "GET_me_player_devices"
+        ],
+        "qid": 37
+    },
+    {
+        "query": "remove the second track from my playlist 'My R&B'",
+        "solution": [
+            "GET_me_playlists",
+            "GET_playlists_playlist_id_tracks",
+            "DELETE_playlists_playlist_id_tracks"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/playlists",
+            "GET https://api.spotify.com/v1/playlists/{playlist_id}/tracks",
+            "DELETE https://api.spotify.com/v1/playlists/{playlist_id}/tracks"
+        ],
+        "api_list": [
+            "GET_me_playlists",
+            "GET_playlists_playlist_id_tracks",
+            "DELETE_playlists_playlist_id_tracks",
+            "GET_albums_id_tracks",
+            "GET_me_player_devices",
+            "GET_search",
+            "PUT_me_player_play",
+            "POST_me_player_queue",
+            "PUT_me_player_pause",
+            "GET_artists_id",
+            "DELETE_me_tracks",
+            "PUT_me_albums",
+            "GET_albums_id",
+            "GET_artists_id_albums",
+            "POST_playlists_playlist_id_tracks",
+            "PUT_playlists_playlist_id",
+            "PUT_me_tracks",
+            "DELETE_me_albums",
+            "GET_browse_new_releases",
+            "GET_me_player"
+        ],
+        "qid": 38
+    },
+    {
+        "query": "remove the third track from My Music",
+        "solution": [
+            "GET_me_tracks",
+            "DELETE_me_tracks"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/tracks",
+            "DELETE https://api.spotify.com/v1/me/tracks"
+        ],
+        "api_list": [
+            "GET_me_tracks",
+            "DELETE_me_tracks",
+            "PUT_me_player_play",
+            "GET_me_player",
+            "POST_playlists_playlist_id_tracks",
+            "GET_playlists_playlist_id_tracks",
+            "GET_tracks_id",
+            "PUT_me_following",
+            "GET_me",
+            "DELETE_me_following",
+            "GET_search",
+            "PUT_me_player_repeat",
+            "GET_me_top_type",
+            "GET_artists_id",
+            "PUT_me_albums",
+            "PUT_me_player_pause",
+            "GET_artists_id_albums",
+            "DELETE_playlists_playlist_id_tracks",
+            "GET_browse_new_releases",
+            "GET_me_player_currently_playing"
+        ],
+        "qid": 39
+    },
+    {
+        "query": "Follow all the singers involved in the song When You Believe",
+        "solution": [
+            "GET_search",
+            "GET_tracks_id",
+            "PUT_me_following"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/search",
+            "GET https://api.spotify.com/v1/tracks/{id}",
+            "PUT https://api.spotify.com/v1/me/following"
+        ],
+        "api_list": [
+            "GET_search",
+            "GET_tracks_id",
+            "PUT_me_following",
+            "GET_me_player_currently_playing",
+            "PUT_me_player_pause",
+            "PUT_playlists_playlist_id",
+            "GET_me_player_recently_played",
+            "GET_me_tracks",
+            "PUT_me_player_repeat",
+            "PUT_me_albums",
+            "GET_artists_id_albums",
+            "PUT_me_player_volume",
+            "GET_me_top_type",
+            "GET_artists_id_top_tracks",
+            "DELETE_me_albums",
+            "POST_users_user_id_playlists",
+            "DELETE_me_tracks",
+            "GET_me_following",
+            "PUT_me_player_play",
+            "GET_me_playlists"
+        ],
+        "qid": 40
+    },
+    {
+        "query": "Skip to the next track",
+        "solution": [
+            "POST_me_player_next"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "POST https://api.spotify.com/v1/me/player/next"
+        ],
+        "api_list": [
+            "POST_me_player_next",
+            "GET_me_player",
+            "PUT_me_tracks",
+            "GET_artists_id_top_tracks",
+            "GET_me_player_devices",
+            "GET_recommendations",
+            "GET_albums_id_tracks",
+            "GET_me_albums",
+            "PUT_me_player_repeat",
+            "GET_tracks_id",
+            "GET_me_player_currently_playing",
+            "GET_me_player_recently_played",
+            "GET_me_tracks",
+            "GET_playlists_playlist_id_tracks",
+            "PUT_me_player_pause",
+            "PUT_me_player_volume",
+            "GET_browse_new_releases",
+            "PUT_me_albums",
+            "GET_search",
+            "GET_me_following"
+        ],
+        "qid": 41
+    },
+    {
+        "query": "Play my playlist 'My Rock'",
+        "solution": [
+            "GET_me_playlists",
+            "PUT_me_player_play"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/playlists",
+            "PUT https://api.spotify.com/v1/me/player/play"
+        ],
+        "api_list": [
+            "GET_me_playlists",
+            "PUT_me_player_play",
+            "GET_albums_id",
+            "GET_artists_id",
+            "GET_browse_new_releases",
+            "GET_me_player",
+            "GET_me_albums",
+            "GET_artists_id_related_artists",
+            "PUT_me_albums",
+            "GET_albums_id_tracks",
+            "PUT_me_player_volume",
+            "DELETE_me_albums",
+            "GET_me_following",
+            "PUT_playlists_playlist_id",
+            "POST_users_user_id_playlists",
+            "GET_search",
+            "GET_me",
+            "POST_me_player_queue",
+            "POST_me_player_previous",
+            "PUT_me_following"
+        ],
+        "qid": 42
+    },
+    {
+        "query": "Clear my music library and cancel all following singers",
+        "solution": [
+            "GET_me_tracks",
+            "DELETE_me_tracks",
+            "GET_me_following",
+            "DELETE_me_following"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/tracks",
+            "DELETE https://api.spotify.com/v1/me/tracks",
+            "GET https://api.spotify.com/v1/me/following",
+            "DELETE https://api.spotify.com/v1/me/following"
+        ],
+        "api_list": [
+            "GET_me_tracks",
+            "DELETE_me_tracks",
+            "GET_me_following",
+            "DELETE_me_following",
+            "GET_me",
+            "GET_me_playlists",
+            "GET_playlists_playlist_id",
+            "GET_tracks_id",
+            "POST_me_player_previous",
+            "GET_me_player_devices",
+            "PUT_me_player_pause",
+            "DELETE_me_albums",
+            "GET_me_top_type",
+            "GET_recommendations",
+            "PUT_me_following",
+            "POST_playlists_playlist_id_tracks",
+            "GET_artists_id",
+            "PUT_me_player_play",
+            "PUT_playlists_playlist_id",
+            "GET_me_player"
+        ],
+        "qid": 43
+    },
+    {
+        "query": "Create a new playlist and name it Quiet",
+        "solution": [
+            "GET_me",
+            "POST_users_user_id_playlists"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me",
+            "POST https://api.spotify.com/v1/users/{user_id}/playlists"
+        ],
+        "api_list": [
+            "GET_me",
+            "POST_users_user_id_playlists",
+            "GET_tracks_id",
+            "GET_me_player",
+            "GET_me_player_recently_played",
+            "PUT_me_tracks",
+            "PUT_me_albums",
+            "GET_me_tracks",
+            "GET_artists_id_related_artists",
+            "DELETE_me_albums",
+            "GET_me_player_queue",
+            "PUT_me_player_pause",
+            "PUT_me_following",
+            "POST_me_player_queue",
+            "PUT_me_player_play",
+            "GET_me_albums",
+            "GET_artists_id_albums",
+            "GET_browse_new_releases",
+            "GET_me_player_devices",
+            "GET_me_playlists"
+        ],
+        "qid": 44
+    },
+    {
+        "query": "Turn down the volume to 20",
+        "solution": [
+            "PUT_me_player_volume"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "PUT https://api.spotify.com/v1/me/player/volume"
+        ],
+        "api_list": [
+            "PUT_me_player_volume",
+            "PUT_me_player_repeat",
+            "POST_me_player_previous",
+            "GET_browse_new_releases",
+            "GET_albums_id",
+            "GET_me_following",
+            "GET_me_top_type",
+            "GET_search",
+            "GET_me_player",
+            "GET_me_tracks",
+            "GET_artists_id_related_artists",
+            "GET_tracks_id",
+            "GET_playlists_playlist_id_tracks",
+            "GET_me_player_queue",
+            "GET_me_albums",
+            "POST_users_user_id_playlists",
+            "GET_playlists_playlist_id",
+            "POST_me_player_queue",
+            "PUT_me_player_play",
+            "GET_me_player_currently_playing"
+        ],
+        "qid": 45
+    },
+    {
+        "query": "Set the single track repeat mode",
+        "solution": [
+            "PUT_me_player_repeat"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "PUT https://api.spotify.com/v1/me/player/repeat"
+        ],
+        "api_list": [
+            "PUT_me_player_repeat",
+            "GET_me_player_devices",
+            "DELETE_me_tracks",
+            "GET_albums_id",
+            "POST_playlists_playlist_id_tracks",
+            "GET_me_albums",
+            "PUT_playlists_playlist_id",
+            "GET_tracks_id",
+            "GET_artists_id",
+            "PUT_me_player_volume",
+            "POST_me_player_next",
+            "GET_me_player_recently_played",
+            "GET_playlists_playlist_id_tracks",
+            "PUT_me_player_play",
+            "GET_search",
+            "GET_me_player",
+            "GET_me_playlists",
+            "GET_browse_new_releases",
+            "GET_me_following",
+            "PUT_me_following"
+        ],
+        "qid": 46
+    },
+    {
+        "query": "Pause playback, increase volume to 80 and switch to the next song",
+        "solution": [
+            "PUT_me_player_pause",
+            "PUT_me_player_volume",
+            "POST_me_player_next"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "PUT https://api.spotify.com/v1/me/player/pause",
+            "PUT https://api.spotify.com/v1/me/player/volume",
+            "POST https://api.spotify.com/v1/me/player/next"
+        ],
+        "api_list": [
+            "PUT_me_player_pause",
+            "PUT_me_player_volume",
+            "POST_me_player_next",
+            "POST_playlists_playlist_id_tracks",
+            "GET_me_playlists",
+            "DELETE_me_albums",
+            "GET_me_albums",
+            "DELETE_me_tracks",
+            "GET_search",
+            "GET_me_player_recently_played",
+            "GET_me_top_type",
+            "GET_artists_id_albums",
+            "GET_albums_id",
+            "GET_artists_id_top_tracks",
+            "PUT_playlists_playlist_id",
+            "GET_recommendations",
+            "GET_me_tracks",
+            "GET_me_player",
+            "GET_me",
+            "GET_tracks_id"
+        ],
+        "qid": 47
+    },
+    {
+        "query": "Play the newest album of BIGBANG",
+        "solution": [
+            "GET_search",
+            "GET_artists_id_albums",
+            "PUT_me_player_play"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/search",
+            "GET https://api.spotify.com/v1/artists/{id}/albums",
+            "PUT https://api.spotify.com/v1/me/player/play"
+        ],
+        "api_list": [
+            "GET_search",
+            "GET_artists_id_albums",
+            "PUT_me_player_play",
+            "GET_me_player_devices",
+            "GET_artists_id_top_tracks",
+            "GET_albums_id",
+            "PUT_me_player_pause",
+            "DELETE_me_albums",
+            "GET_me_player_recently_played",
+            "GET_browse_new_releases",
+            "PUT_me_following",
+            "GET_me_player",
+            "PUT_me_player_repeat",
+            "PUT_me_tracks",
+            "POST_playlists_playlist_id_tracks",
+            "POST_me_player_next",
+            "POST_me_player_previous",
+            "GET_me_player_queue",
+            "GET_recommendations",
+            "PUT_playlists_playlist_id"
+        ],
+        "qid": 48
+    },
+    {
+        "query": "Follow the artist of the album Mojito",
+        "solution": [
+            "GET_search",
+            "GET_albums_id",
+            "PUT_me_following"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/search",
+            "GET https://api.spotify.com/v1/albums/{id}",
+            "PUT https://api.spotify.com/v1/me/following"
+        ],
+        "api_list": [
+            "GET_search",
+            "GET_albums_id",
+            "PUT_me_following",
+            "GET_recommendations",
+            "GET_me_player_queue",
+            "POST_users_user_id_playlists",
+            "GET_me_player",
+            "POST_me_player_next",
+            "GET_me_following",
+            "PUT_me_player_repeat",
+            "POST_me_player_queue",
+            "GET_me_top_type",
+            "PUT_playlists_playlist_id",
+            "GET_me_player_devices",
+            "GET_artists_id_albums",
+            "GET_artists_id_related_artists",
+            "PUT_me_player_play",
+            "DELETE_playlists_playlist_id_tracks",
+            "GET_playlists_playlist_id_tracks",
+            "GET_me_tracks"
+        ],
+        "qid": 49
+    },
+    {
+        "query": "Play the third song from my music library and set the single track repeat mode",
+        "solution": [
+            "GET_me_tracks",
+            "GET_tracks_id",
+            "PUT_me_player_play",
+            "PUT_me_player_repeat"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/tracks",
+            "GET https://api.spotify.com/v1/tracks/{id}",
+            "PUT https://api.spotify.com/v1/me/player/play",
+            "PUT https://api.spotify.com/v1/me/player/repeat"
+        ],
+        "api_list": [
+            "GET_me_tracks",
+            "GET_tracks_id",
+            "PUT_me_player_play",
+            "PUT_me_player_repeat",
+            "GET_me_albums",
+            "GET_me_playlists",
+            "GET_me_player_devices",
+            "PUT_me_albums",
+            "PUT_playlists_playlist_id",
+            "POST_me_player_next",
+            "GET_artists_id_related_artists",
+            "GET_albums_id_tracks",
+            "GET_me_following",
+            "GET_playlists_playlist_id_tracks",
+            "DELETE_playlists_playlist_id_tracks",
+            "GET_artists_id",
+            "DELETE_me_following",
+            "GET_me_player_queue",
+            "GET_albums_id",
+            "PUT_me_following"
+        ],
+        "qid": 50
+    },
+    {
+        "query": "Create a new playlist named 'BIGBANG' and add a song of BIGBANG to it",
+        "solution": [
+            "GET_me",
+            "POST_users_user_id_playlists",
+            "GET_search",
+            "POST_playlists_playlist_id_tracks"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me",
+            "POST https://api.spotify.com/v1/users/{user_id}/playlists",
+            "GET https://api.spotify.com/v1/search",
+            "POST https://api.spotify.com/v1/playlists/{playlist_id}/tracks"
+        ],
+        "api_list": [
+            "GET_me",
+            "POST_users_user_id_playlists",
+            "GET_search",
+            "POST_playlists_playlist_id_tracks",
+            "POST_me_player_next",
+            "GET_me_player_recently_played",
+            "GET_recommendations",
+            "GET_me_albums",
+            "GET_me_following",
+            "GET_me_tracks",
+            "GET_tracks_id",
+            "GET_artists_id",
+            "GET_artists_id_related_artists",
+            "GET_me_player",
+            "PUT_playlists_playlist_id",
+            "GET_me_playlists",
+            "PUT_me_player_volume",
+            "DELETE_me_tracks",
+            "GET_artists_id_top_tracks",
+            "DELETE_me_albums"
+        ],
+        "qid": 51
+    },
+    {
+        "query": "Delete all songs from my first playlist",
+        "solution": [
+            "GET_me_playlists",
+            "GET_playlists_playlist_id",
+            "DELETE_playlists_playlist_id_tracks"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/playlists",
+            "GET https://api.spotify.com/v1/playlists/{playlist_id}",
+            "DELETE https://api.spotify.com/v1/playlists/{playlist_id}/tracks"
+        ],
+        "api_list": [
+            "GET_me_playlists",
+            "GET_playlists_playlist_id",
+            "DELETE_playlists_playlist_id_tracks",
+            "PUT_playlists_playlist_id",
+            "DELETE_me_albums",
+            "GET_me_following",
+            "GET_me_albums",
+            "GET_me_tracks",
+            "GET_me_player",
+            "GET_me_player_currently_playing",
+            "GET_artists_id_related_artists",
+            "GET_browse_new_releases",
+            "PUT_me_following",
+            "GET_artists_id",
+            "GET_me_top_type",
+            "PUT_me_player_repeat",
+            "POST_me_player_previous",
+            "PUT_me_player_pause",
+            "PUT_me_player_play",
+            "DELETE_me_tracks"
+        ],
+        "qid": 52
+    },
+    {
+        "query": "Make my first playlist private",
+        "solution": [
+            "GET_me_playlists",
+            "GET_playlists_playlist_id",
+            "PUT_playlists_playlist_id"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/playlists",
+            "GET https://api.spotify.com/v1/playlists/{playlist_id}",
+            "PUT https://api.spotify.com/v1/playlists/{playlist_id}"
+        ],
+        "api_list": [
+            "GET_me_playlists",
+            "GET_playlists_playlist_id",
+            "PUT_playlists_playlist_id",
+            "GET_artists_id_top_tracks",
+            "GET_artists_id_albums",
+            "DELETE_playlists_playlist_id_tracks",
+            "GET_me",
+            "GET_me_tracks",
+            "GET_me_player",
+            "PUT_me_albums",
+            "GET_search",
+            "DELETE_me_following",
+            "GET_playlists_playlist_id_tracks",
+            "POST_users_user_id_playlists",
+            "GET_me_player_queue",
+            "GET_me_player_recently_played",
+            "GET_me_albums",
+            "GET_me_player_currently_playing",
+            "GET_artists_id_related_artists",
+            "PUT_me_player_repeat"
+        ],
+        "qid": 53
+    },
+    {
+        "query": "Add album Mojito to my music library",
+        "solution": [
+            "GET_search",
+            "PUT_me_albums"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/search",
+            "PUT https://api.spotify.com/v1/me/albums"
+        ],
+        "api_list": [
+            "GET_search",
+            "PUT_me_albums",
+            "POST_me_player_queue",
+            "PUT_me_player_volume",
+            "GET_albums_id",
+            "PUT_me_player_repeat",
+            "GET_browse_new_releases",
+            "GET_tracks_id",
+            "GET_artists_id_related_artists",
+            "GET_playlists_playlist_id",
+            "GET_artists_id_top_tracks",
+            "GET_me",
+            "GET_artists_id_albums",
+            "PUT_playlists_playlist_id",
+            "PUT_me_tracks",
+            "GET_me_player",
+            "GET_me_tracks",
+            "POST_me_player_previous",
+            "GET_recommendations",
+            "GET_artists_id"
+        ],
+        "qid": 54
+    },
+    {
+        "query": "Add the first song from my music library to the playback queue and enable single song repeat mode",
+        "solution": [
+            "GET_me_tracks",
+            "POST_me_player_queue",
+            "PUT_me_player_repeat"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me/tracks",
+            "POST https://api.spotify.com/v1/me/player/queue",
+            "PUT https://api.spotify.com/v1/me/player/repeat"
+        ],
+        "api_list": [
+            "GET_me_tracks",
+            "POST_me_player_queue",
+            "PUT_me_player_repeat",
+            "GET_me_albums",
+            "GET_playlists_playlist_id",
+            "GET_albums_id",
+            "POST_me_player_previous",
+            "PUT_me_albums",
+            "GET_me_player_devices",
+            "GET_me_player",
+            "GET_artists_id_albums",
+            "POST_playlists_playlist_id_tracks",
+            "POST_users_user_id_playlists",
+            "POST_me_player_next",
+            "GET_artists_id_top_tracks",
+            "GET_albums_id_tracks",
+            "GET_browse_new_releases",
+            "GET_artists_id",
+            "DELETE_me_following",
+            "GET_me_player_queue"
+        ],
+        "qid": 55
+    },
+    {
+        "query": "What is my user name?",
+        "solution": [
+            "GET_me"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "GET https://api.spotify.com/v1/me"
+        ],
+        "api_list": [
+            "GET_me",
+            "GET_me_top_type",
+            "GET_artists_id_top_tracks",
+            "GET_me_player_devices",
+            "GET_me_playlists",
+            "GET_me_player_queue",
+            "PUT_me_albums",
+            "GET_tracks_id",
+            "GET_playlists_playlist_id",
+            "GET_albums_id",
+            "POST_me_player_previous",
+            "GET_me_tracks",
+            "GET_search",
+            "GET_recommendations",
+            "POST_users_user_id_playlists",
+            "GET_me_player_currently_playing",
+            "PUT_me_player_volume",
+            "GET_me_player",
+            "PUT_me_following",
+            "GET_artists_id"
+        ],
+        "qid": 56
+    },
+    {
+        "query": "Pause the player",
+        "solution": [
+            "PUT_me_player_pause"
+        ],
+        "dataset": "spotify",
+        "url": [
+            "PUT https://api.spotify.com/v1/me/player/pause"
+        ],
+        "api_list": [
+            "PUT_me_player_pause",
+            "GET_me_player",
+            "GET_me_tracks",
+            "GET_me_player_devices",
+            "GET_recommendations",
+            "POST_playlists_playlist_id_tracks",
+            "PUT_me_following",
+            "POST_me_player_next",
+            "DELETE_me_tracks",
+            "GET_browse_new_releases",
+            "GET_tracks_id",
+            "DELETE_me_albums",
+            "GET_artists_id",
+            "GET_me_playlists",
+            "GET_artists_id_top_tracks",
+            "POST_me_player_previous",
+            "GET_artists_id_albums",
+            "GET_albums_id",
+            "GET_me_top_type",
+            "GET_me"
+        ],
+        "qid": 57
+    }
+]

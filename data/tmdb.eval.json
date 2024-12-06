@@ -1,0 +1,3554 @@
+[
+    {
+        "query": "give me the number of movies directed by Sofia Coppola",
+        "solution": [
+            "GET_search_person",
+            "GET_person_person_id_movie_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/person",
+            "GET https://api.themoviedb.org/3/person/{person_id}/movie_credits"
+        ],
+        "api_list": [
+            "GET_search_person",
+            "GET_person_person_id_movie_credits",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_tv_tv_id_credits",
+            "GET_movie_top_rated",
+            "GET_discover_tv",
+            "GET_movie_movie_id_credits",
+            "GET_tv_tv_id_keywords",
+            "GET_tv_tv_id_reviews",
+            "GET_company_company_id_images",
+            "GET_review_review_id",
+            "GET_movie_movie_id_recommendations",
+            "GET_network_network_id_images",
+            "GET_genre_tv_list",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_search_collection",
+            "GET_person_person_id_tv_credits",
+            "GET_person_person_id_images",
+            "GET_tv_tv_id_recommendations",
+            "GET_person_popular"
+        ],
+        "qid": "q0"
+    },
+    {
+        "query": "Who was the lead actor in the movie The Dark Knight?",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/credits"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits",
+            "GET_movie_movie_id_keywords",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_tv_latest",
+            "GET_search_person",
+            "GET_tv_on_the_air",
+            "GET_company_company_id_images",
+            "GET_movie_movie_id_recommendations",
+            "GET_movie_movie_id_images",
+            "GET_credit_credit_id",
+            "GET_person_person_id_movie_credits",
+            "GET_movie_now_playing",
+            "GET_network_network_id_images",
+            "GET_movie_upcoming",
+            "GET_search_company",
+            "GET_tv_tv_id_keywords",
+            "GET_movie_movie_id_release_dates",
+            "GET_person_person_id_images",
+            "GET_tv_tv_id"
+        ],
+        "qid": "q1"
+    },
+    {
+        "query": "Who directed the top-1 rated movie?",
+        "solution": [
+            "GET_movie_top_rated",
+            "GET_movie_movie_id_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/movie/top_rated",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/credits"
+        ],
+        "api_list": [
+            "GET_movie_top_rated",
+            "GET_movie_movie_id_credits",
+            "GET_movie_movie_id_release_dates",
+            "GET_discover_movie",
+            "GET_credit_credit_id",
+            "GET_movie_movie_id_similar",
+            "GET_search_tv",
+            "GET_movie_now_playing",
+            "GET_genre_tv_list",
+            "GET_review_review_id",
+            "GET_collection_collection_id",
+            "GET_network_network_id",
+            "GET_person_person_id_tv_credits",
+            "GET_movie_upcoming",
+            "GET_network_network_id_images",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_tv_tv_id_images",
+            "GET_person_person_id_images",
+            "GET_tv_tv_id_season_season_number",
+            "GET_movie_movie_id"
+        ],
+        "qid": "q2"
+    },
+    {
+        "query": "give me a image for the collection Star Wars",
+        "solution": [
+            "GET_search_collection",
+            "GET_collection_collection_id_images"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/collection",
+            "GET https://api.themoviedb.org/3/collection/{collection_id}/images"
+        ],
+        "api_list": [
+            "GET_search_collection",
+            "GET_collection_collection_id_images",
+            "GET_tv_tv_id_recommendations",
+            "GET_movie_latest",
+            "GET_tv_tv_id_season_season_number",
+            "GET_discover_tv",
+            "GET_search_tv",
+            "GET_tv_tv_id_similar",
+            "GET_tv_tv_id_images",
+            "GET_review_review_id",
+            "GET_tv_on_the_air",
+            "GET_movie_movie_id_release_dates",
+            "GET_movie_movie_id_reviews",
+            "GET_tv_airing_today",
+            "GET_tv_tv_id_credits",
+            "GET_movie_top_rated",
+            "GET_discover_movie",
+            "GET_person_person_id_tv_credits",
+            "GET_tv_top_rated",
+            "GET_movie_movie_id_credits"
+        ],
+        "qid": "q3"
+    },
+    {
+        "query": "What is the logo of the Walt Disney?",
+        "solution": [
+            "GET_search_company",
+            "GET_company_company_id_images"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/company",
+            "GET https://api.themoviedb.org/3/company/{company_id}/images"
+        ],
+        "api_list": [
+            "GET_search_company",
+            "GET_company_company_id_images",
+            "GET_discover_movie",
+            "GET_movie_movie_id_release_dates",
+            "GET_collection_collection_id",
+            "GET_person_person_id_images",
+            "GET_tv_tv_id_recommendations",
+            "GET_tv_tv_id_season_season_number",
+            "GET_genre_tv_list",
+            "GET_tv_top_rated",
+            "GET_movie_movie_id",
+            "GET_discover_tv",
+            "GET_genre_movie_list",
+            "GET_search_movie",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_movie_latest",
+            "GET_movie_movie_id_images",
+            "GET_tv_tv_id_keywords",
+            "GET_tv_tv_id_reviews",
+            "GET_movie_top_rated"
+        ],
+        "qid": "q4"
+    },
+    {
+        "query": "What dose the lead actor of Titanic look like?",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits",
+            "GET_person_person_id_images"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/credits",
+            "GET https://api.themoviedb.org/3/person/{person_id}/images"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits",
+            "GET_person_person_id_images",
+            "GET_tv_tv_id",
+            "GET_tv_tv_id_reviews",
+            "GET_tv_top_rated",
+            "GET_search_person",
+            "GET_movie_top_rated",
+            "GET_credit_credit_id",
+            "GET_movie_movie_id_images",
+            "GET_discover_tv",
+            "GET_movie_latest",
+            "GET_discover_movie",
+            "GET_tv_latest",
+            "GET_collection_collection_id_images",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_genre_tv_list",
+            "GET_movie_upcoming",
+            "GET_tv_tv_id_similar",
+            "GET_tv_tv_id_images"
+        ],
+        "qid": "q5"
+    },
+    {
+        "query": "give me some reviews of the first movie that is similar to Titanic",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id_similar",
+            "GET_movie_movie_id_reviews"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/similar",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/reviews"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id_similar",
+            "GET_movie_movie_id_reviews",
+            "GET_genre_tv_list",
+            "GET_movie_now_playing",
+            "GET_tv_tv_id_keywords",
+            "GET_movie_movie_id_keywords",
+            "GET_movie_upcoming",
+            "GET_movie_latest",
+            "GET_person_person_id_images",
+            "GET_network_network_id",
+            "GET_person_popular",
+            "GET_tv_tv_id_credits",
+            "GET_tv_latest",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_movie_movie_id_recommendations",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_movie_movie_id_images",
+            "GET_tv_on_the_air"
+        ],
+        "qid": "q6"
+    },
+    {
+        "query": "I just finished watching Titanic and I want some other movie recommendations",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id_recommendations"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/recommendations"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id_recommendations",
+            "GET_movie_movie_id_release_dates",
+            "GET_tv_tv_id_keywords",
+            "GET_tv_latest",
+            "GET_person_person_id_tv_credits",
+            "GET_movie_movie_id_keywords",
+            "GET_tv_top_rated",
+            "GET_company_company_id_images",
+            "GET_search_person",
+            "GET_tv_tv_id_similar",
+            "GET_network_network_id_images",
+            "GET_person_person_id_images",
+            "GET_movie_movie_id_images",
+            "GET_tv_tv_id_season_season_number",
+            "GET_search_collection",
+            "GET_tv_tv_id_recommendations",
+            "GET_movie_top_rated",
+            "GET_search_tv",
+            "GET_person_popular"
+        ],
+        "qid": "q7"
+    },
+    {
+        "query": "What is the latest movie directed by Christopher Nolan?",
+        "solution": [
+            "GET_search_person",
+            "GET_person_person_id_movie_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/person",
+            "GET https://api.themoviedb.org/3/person/{person_id}/movie_credits"
+        ],
+        "api_list": [
+            "GET_search_person",
+            "GET_person_person_id_movie_credits",
+            "GET_person_person_id_images",
+            "GET_collection_collection_id_images",
+            "GET_tv_top_rated",
+            "GET_movie_now_playing",
+            "GET_movie_movie_id_images",
+            "GET_person_person_id",
+            "GET_tv_tv_id_similar",
+            "GET_tv_tv_id",
+            "GET_movie_popular",
+            "GET_movie_movie_id_similar",
+            "GET_credit_credit_id",
+            "GET_tv_airing_today",
+            "GET_trending_media_type_time_window",
+            "GET_tv_tv_id_recommendations",
+            "GET_tv_latest",
+            "GET_search_company",
+            "GET_genre_movie_list",
+            "GET_movie_movie_id_release_dates"
+        ],
+        "qid": "q8"
+    },
+    {
+        "query": "tell me the highest rated movie directed by Martin Scorsese",
+        "solution": [
+            "GET_search_person",
+            "GET_person_person_id_movie_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/person",
+            "GET https://api.themoviedb.org/3/person/{person_id}/movie_credits"
+        ],
+        "api_list": [
+            "GET_search_person",
+            "GET_person_person_id_movie_credits",
+            "GET_review_review_id",
+            "GET_tv_top_rated",
+            "GET_person_person_id_tv_credits",
+            "GET_tv_tv_id_images",
+            "GET_credit_credit_id",
+            "GET_person_person_id",
+            "GET_person_person_id_images",
+            "GET_movie_top_rated",
+            "GET_search_collection",
+            "GET_tv_tv_id_reviews",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_tv_airing_today",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_collection_collection_id",
+            "GET_movie_movie_id_release_dates",
+            "GET_movie_movie_id_recommendations",
+            "GET_tv_popular",
+            "GET_movie_movie_id"
+        ],
+        "qid": "q9"
+    },
+    {
+        "query": "Who is the director of Leonardo DiCaprio's latest movie?",
+        "solution": [
+            "GET_search_person",
+            "GET_person_person_id_movie_credits",
+            "GET_movie_movie_id_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/person",
+            "GET https://api.themoviedb.org/3/person/{person_id}/movie_credits",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/credits"
+        ],
+        "api_list": [
+            "GET_search_person",
+            "GET_person_person_id_movie_credits",
+            "GET_movie_movie_id_credits",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_tv_airing_today",
+            "GET_tv_tv_id_recommendations",
+            "GET_tv_tv_id_credits",
+            "GET_tv_tv_id_season_season_number",
+            "GET_search_collection",
+            "GET_person_person_id_images",
+            "GET_search_movie",
+            "GET_tv_tv_id_reviews",
+            "GET_company_company_id_images",
+            "GET_movie_top_rated",
+            "GET_movie_movie_id_images",
+            "GET_tv_tv_id_images",
+            "GET_movie_movie_id",
+            "GET_person_person_id_tv_credits",
+            "GET_network_network_id",
+            "GET_tv_top_rated"
+        ],
+        "qid": "q10"
+    },
+    {
+        "query": "tell me a TV show recently directed by Catherine Hardwicke",
+        "solution": [
+            "GET_search_person",
+            "GET_person_person_id_tv_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/person",
+            "GET https://api.themoviedb.org/3/person/{person_id}/tv_credits"
+        ],
+        "api_list": [
+            "GET_search_person",
+            "GET_person_person_id_tv_credits",
+            "GET_tv_airing_today",
+            "GET_movie_movie_id",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_network_network_id",
+            "GET_movie_upcoming",
+            "GET_tv_tv_id_keywords",
+            "GET_collection_collection_id_images",
+            "GET_tv_tv_id_reviews",
+            "GET_movie_top_rated",
+            "GET_tv_tv_id_season_season_number",
+            "GET_discover_movie",
+            "GET_trending_media_type_time_window",
+            "GET_tv_top_rated",
+            "GET_tv_tv_id_similar",
+            "GET_network_network_id_images",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_movie_now_playing",
+            "GET_movie_movie_id_similar"
+        ],
+        "qid": "q11"
+    },
+    {
+        "query": "Please recommend me some TV shows similar to Breaking Bad",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id_recommendations"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/recommendations"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id_recommendations",
+            "GET_tv_tv_id",
+            "GET_movie_popular",
+            "GET_collection_collection_id",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_person_popular",
+            "GET_search_collection",
+            "GET_discover_movie",
+            "GET_movie_movie_id_recommendations",
+            "GET_trending_media_type_time_window",
+            "GET_movie_top_rated",
+            "GET_movie_latest",
+            "GET_tv_airing_today",
+            "GET_movie_movie_id",
+            "GET_tv_tv_id_images",
+            "GET_movie_movie_id_reviews",
+            "GET_collection_collection_id_images",
+            "GET_movie_movie_id_similar",
+            "GET_tv_on_the_air"
+        ],
+        "qid": "q12"
+    },
+    {
+        "query": "Who is the director of today's most trending movie?",
+        "solution": [
+            "GET_trending_media_type_time_window",
+            "GET_movie_movie_id_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/trending/{media_type}/{time_window}",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/credits"
+        ],
+        "api_list": [
+            "GET_trending_media_type_time_window",
+            "GET_movie_movie_id_credits",
+            "GET_movie_movie_id_similar",
+            "GET_search_company",
+            "GET_review_review_id",
+            "GET_network_network_id_images",
+            "GET_genre_movie_list",
+            "GET_tv_tv_id_similar",
+            "GET_tv_on_the_air",
+            "GET_credit_credit_id",
+            "GET_movie_now_playing",
+            "GET_movie_movie_id_keywords",
+            "GET_genre_tv_list",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_movie_latest",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_tv_tv_id",
+            "GET_collection_collection_id_images",
+            "GET_company_company_id_images",
+            "GET_search_movie"
+        ],
+        "qid": "q13"
+    },
+    {
+        "query": "Who is the director of the movie \"Twilight\"?",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/credits"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits",
+            "GET_company_company_id_images",
+            "GET_person_person_id",
+            "GET_network_network_id_images",
+            "GET_movie_upcoming",
+            "GET_tv_tv_id_similar",
+            "GET_collection_collection_id",
+            "GET_tv_latest",
+            "GET_tv_popular",
+            "GET_movie_movie_id",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_person_popular",
+            "GET_credit_credit_id",
+            "GET_movie_movie_id_images",
+            "GET_genre_tv_list",
+            "GET_tv_airing_today",
+            "GET_person_person_id_movie_credits",
+            "GET_movie_movie_id_release_dates",
+            "GET_network_network_id"
+        ],
+        "qid": "q14"
+    },
+    {
+        "query": "give me a photo belong to the second episode of the first season of the Witcher",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/season/{season_number}/episode/{episode_number}/images"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_movie_movie_id_recommendations",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_genre_movie_list",
+            "GET_tv_tv_id_reviews",
+            "GET_tv_tv_id_season_season_number",
+            "GET_tv_latest",
+            "GET_search_person",
+            "GET_tv_tv_id_similar",
+            "GET_tv_tv_id",
+            "GET_tv_tv_id_recommendations",
+            "GET_movie_movie_id_credits",
+            "GET_collection_collection_id_images",
+            "GET_search_movie",
+            "GET_person_person_id_images",
+            "GET_person_person_id_tv_credits",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_person_person_id",
+            "GET_network_network_id"
+        ],
+        "qid": "q15"
+    },
+    {
+        "query": "What is top-1 rated movie?",
+        "solution": [
+            "GET_movie_top_rated"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/movie/top_rated"
+        ],
+        "api_list": [
+            "GET_movie_top_rated",
+            "GET_tv_latest",
+            "GET_review_review_id",
+            "GET_movie_now_playing",
+            "GET_company_company_id_images",
+            "GET_search_collection",
+            "GET_trending_media_type_time_window",
+            "GET_tv_top_rated",
+            "GET_genre_movie_list",
+            "GET_movie_movie_id_images",
+            "GET_movie_movie_id",
+            "GET_search_movie",
+            "GET_tv_on_the_air",
+            "GET_movie_movie_id_release_dates",
+            "GET_tv_popular",
+            "GET_search_person",
+            "GET_tv_tv_id_images",
+            "GET_network_network_id_images",
+            "GET_discover_movie",
+            "GET_movie_upcoming"
+        ],
+        "qid": "q16"
+    },
+    {
+        "query": "What is the release date of the movie \"The Matrix\"?",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id_release_dates"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/release_dates"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id_release_dates",
+            "GET_person_person_id_movie_credits",
+            "GET_review_review_id",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_discover_tv",
+            "GET_search_company",
+            "GET_trending_media_type_time_window",
+            "GET_collection_collection_id",
+            "GET_search_collection",
+            "GET_collection_collection_id_images",
+            "GET_movie_movie_id_images",
+            "GET_company_company_id",
+            "GET_search_person",
+            "GET_movie_now_playing",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_tv_popular",
+            "GET_movie_latest",
+            "GET_movie_movie_id",
+            "GET_tv_tv_id"
+        ],
+        "qid": "q17"
+    },
+    {
+        "query": "Who is the most popular person?",
+        "solution": [
+            "GET_person_popular"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/person/popular"
+        ],
+        "api_list": [
+            "GET_person_popular",
+            "GET_tv_tv_id_similar",
+            "GET_company_company_id_images",
+            "GET_movie_movie_id_reviews",
+            "GET_tv_tv_id_keywords",
+            "GET_collection_collection_id",
+            "GET_network_network_id",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_movie_movie_id",
+            "GET_movie_movie_id_similar",
+            "GET_tv_popular",
+            "GET_tv_tv_id_reviews",
+            "GET_genre_tv_list",
+            "GET_review_review_id",
+            "GET_network_network_id_images",
+            "GET_trending_media_type_time_window",
+            "GET_movie_movie_id_release_dates",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_tv_tv_id_credits",
+            "GET_tv_tv_id_recommendations"
+        ],
+        "qid": "q18"
+    },
+    {
+        "query": "Give me some cover images of movies directed by Christopher Nolan.",
+        "solution": [
+            "GET_search_person",
+            "GET_person_person_id_movie_credits",
+            "GET_movie_movie_id_images"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/person",
+            "GET https://api.themoviedb.org/3/person/{person_id}/movie_credits",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/images"
+        ],
+        "api_list": [
+            "GET_search_person",
+            "GET_person_person_id_movie_credits",
+            "GET_movie_movie_id_images",
+            "GET_search_movie",
+            "GET_genre_movie_list",
+            "GET_genre_tv_list",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_network_network_id",
+            "GET_review_review_id",
+            "GET_movie_popular",
+            "GET_movie_top_rated",
+            "GET_movie_movie_id_credits",
+            "GET_movie_upcoming",
+            "GET_collection_collection_id",
+            "GET_movie_movie_id",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_tv_tv_id_recommendations",
+            "GET_movie_movie_id_reviews",
+            "GET_tv_tv_id_season_season_number",
+            "GET_discover_movie"
+        ],
+        "qid": "q19"
+    },
+    {
+        "query": "What are some common keywords associated with movie \"Titanic\"?",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id_keywords"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/keywords"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id_keywords",
+            "GET_tv_tv_id_images",
+            "GET_person_person_id_tv_credits",
+            "GET_discover_tv",
+            "GET_tv_on_the_air",
+            "GET_movie_movie_id",
+            "GET_movie_movie_id_similar",
+            "GET_tv_latest",
+            "GET_tv_tv_id_keywords",
+            "GET_movie_movie_id_credits",
+            "GET_person_popular",
+            "GET_network_network_id",
+            "GET_collection_collection_id",
+            "GET_credit_credit_id",
+            "GET_company_company_id_images",
+            "GET_person_person_id",
+            "GET_search_person",
+            "GET_tv_tv_id_recommendations",
+            "GET_tv_tv_id_season_season_number_images"
+        ],
+        "qid": "q20"
+    },
+    {
+        "query": "Give me a show that is currently on the air",
+        "solution": [
+            "GET_tv_on_the_air"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/tv/on_the_air"
+        ],
+        "api_list": [
+            "GET_tv_on_the_air",
+            "GET_discover_tv",
+            "GET_movie_movie_id_keywords",
+            "GET_tv_tv_id_images",
+            "GET_movie_movie_id_release_dates",
+            "GET_search_person",
+            "GET_search_company",
+            "GET_company_company_id_images",
+            "GET_movie_popular",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_network_network_id_images",
+            "GET_movie_movie_id_images",
+            "GET_person_popular",
+            "GET_movie_upcoming",
+            "GET_movie_movie_id_similar",
+            "GET_tv_tv_id_keywords",
+            "GET_tv_popular",
+            "GET_credit_credit_id",
+            "GET_search_movie",
+            "GET_network_network_id"
+        ],
+        "qid": "q21"
+    },
+    {
+        "query": "When is Clint Eastwood's latest movie scheduled to be released?",
+        "solution": [
+            "GET_search_person",
+            "GET_person_person_id_movie_credits",
+            "GET_movie_movie_id_release_dates"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/person",
+            "GET https://api.themoviedb.org/3/person/{person_id}/movie_credits",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/release_dates"
+        ],
+        "api_list": [
+            "GET_search_person",
+            "GET_person_person_id_movie_credits",
+            "GET_movie_movie_id_release_dates",
+            "GET_search_collection",
+            "GET_movie_top_rated",
+            "GET_tv_top_rated",
+            "GET_search_movie",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_movie_movie_id_images",
+            "GET_movie_now_playing",
+            "GET_tv_tv_id_reviews",
+            "GET_movie_movie_id_keywords",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_person_popular",
+            "GET_tv_tv_id",
+            "GET_network_network_id",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_movie_popular",
+            "GET_movie_movie_id_credits",
+            "GET_tv_tv_id_season_season_number_credits"
+        ],
+        "qid": "q22"
+    },
+    {
+        "query": "Give me some movie reviews about The Dark Knight",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id_reviews"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/reviews"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id_reviews",
+            "GET_tv_tv_id_credits",
+            "GET_tv_tv_id_reviews",
+            "GET_search_person",
+            "GET_person_person_id_movie_credits",
+            "GET_network_network_id_images",
+            "GET_person_popular",
+            "GET_review_review_id",
+            "GET_trending_media_type_time_window",
+            "GET_movie_movie_id_release_dates",
+            "GET_discover_movie",
+            "GET_network_network_id",
+            "GET_company_company_id",
+            "GET_search_company",
+            "GET_person_person_id_tv_credits",
+            "GET_tv_latest",
+            "GET_tv_tv_id_images",
+            "GET_movie_movie_id",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits"
+        ],
+        "qid": "q23"
+    },
+    {
+        "query": "What are some movies that are similar to one of the movies directed by Francis Ford Coppola?",
+        "solution": [
+            "GET_search_person",
+            "GET_person_person_id_movie_credits",
+            "GET_movie_movie_id_similar"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/person",
+            "GET https://api.themoviedb.org/3/person/{person_id}/movie_credits",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/similar"
+        ],
+        "api_list": [
+            "GET_search_person",
+            "GET_person_person_id_movie_credits",
+            "GET_movie_movie_id_similar",
+            "GET_search_company",
+            "GET_tv_popular",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_movie_now_playing",
+            "GET_review_review_id",
+            "GET_collection_collection_id_images",
+            "GET_genre_movie_list",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_tv_tv_id_credits",
+            "GET_genre_tv_list",
+            "GET_tv_on_the_air",
+            "GET_movie_movie_id_recommendations",
+            "GET_person_person_id_tv_credits",
+            "GET_movie_latest",
+            "GET_movie_movie_id_credits",
+            "GET_search_collection",
+            "GET_company_company_id"
+        ],
+        "qid": "q24"
+    },
+    {
+        "query": "Who is the lead actor in the latest released movie?",
+        "solution": [
+            "GET_movie_latest",
+            "GET_movie_movie_id_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/movie/latest",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/credits"
+        ],
+        "api_list": [
+            "GET_movie_latest",
+            "GET_movie_movie_id_credits",
+            "GET_tv_top_rated",
+            "GET_person_person_id_tv_credits",
+            "GET_company_company_id_images",
+            "GET_network_network_id",
+            "GET_search_person",
+            "GET_person_person_id_images",
+            "GET_movie_movie_id_similar",
+            "GET_network_network_id_images",
+            "GET_genre_tv_list",
+            "GET_collection_collection_id_images",
+            "GET_trending_media_type_time_window",
+            "GET_search_movie",
+            "GET_movie_movie_id_keywords",
+            "GET_credit_credit_id",
+            "GET_tv_latest",
+            "GET_search_company",
+            "GET_tv_tv_id_credits",
+            "GET_tv_tv_id_season_season_number_episode_episode_number"
+        ],
+        "qid": "q25"
+    },
+    {
+        "query": "give me one image of the movie that is currently showing in theaters",
+        "solution": [
+            "GET_movie_now_playing",
+            "GET_movie_movie_id_images"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/movie/now_playing",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/images"
+        ],
+        "api_list": [
+            "GET_movie_now_playing",
+            "GET_movie_movie_id_images",
+            "GET_movie_movie_id_similar",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_discover_movie",
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_movie_movie_id_keywords",
+            "GET_trending_media_type_time_window",
+            "GET_person_person_id_movie_credits",
+            "GET_tv_tv_id_credits",
+            "GET_movie_movie_id_release_dates",
+            "GET_network_network_id",
+            "GET_tv_top_rated",
+            "GET_genre_tv_list",
+            "GET_company_company_id_images",
+            "GET_movie_movie_id_reviews",
+            "GET_collection_collection_id_images",
+            "GET_discover_tv",
+            "GET_tv_on_the_air"
+        ],
+        "qid": "q26"
+    },
+    {
+        "query": "What is the most popular movie right now and what is its keywords?",
+        "solution": [
+            "GET_movie_popular",
+            "GET_movie_movie_id_keywords"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/movie/popular",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/keywords"
+        ],
+        "api_list": [
+            "GET_movie_popular",
+            "GET_movie_movie_id_keywords",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_tv_tv_id",
+            "GET_person_person_id_images",
+            "GET_tv_on_the_air",
+            "GET_network_network_id",
+            "GET_movie_movie_id_credits",
+            "GET_trending_media_type_time_window",
+            "GET_tv_tv_id_reviews",
+            "GET_person_popular",
+            "GET_movie_movie_id_recommendations",
+            "GET_review_review_id",
+            "GET_search_collection",
+            "GET_tv_airing_today",
+            "GET_tv_latest",
+            "GET_movie_movie_id_reviews",
+            "GET_person_person_id",
+            "GET_movie_movie_id_release_dates",
+            "GET_collection_collection_id_images"
+        ],
+        "qid": "q27"
+    },
+    {
+        "query": "What are the keywords of the most popular movie right now",
+        "solution": [
+            "GET_movie_popular",
+            "GET_movie_movie_id_keywords"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/movie/popular",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/keywords"
+        ],
+        "api_list": [
+            "GET_movie_popular",
+            "GET_movie_movie_id_keywords",
+            "GET_search_person",
+            "GET_tv_popular",
+            "GET_network_network_id",
+            "GET_search_movie",
+            "GET_movie_movie_id_recommendations",
+            "GET_tv_top_rated",
+            "GET_movie_movie_id",
+            "GET_tv_tv_id_recommendations",
+            "GET_discover_movie",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_collection_collection_id",
+            "GET_company_company_id_images",
+            "GET_genre_tv_list",
+            "GET_tv_airing_today",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_tv_tv_id_similar"
+        ],
+        "qid": "q28"
+    },
+    {
+        "query": "Who has starred in a movie \"Titanic\"",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/credits"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits",
+            "GET_tv_tv_id_recommendations",
+            "GET_company_company_id_images",
+            "GET_tv_on_the_air",
+            "GET_person_person_id_movie_credits",
+            "GET_movie_movie_id_recommendations",
+            "GET_movie_now_playing",
+            "GET_movie_popular",
+            "GET_tv_tv_id_similar",
+            "GET_tv_latest",
+            "GET_discover_tv",
+            "GET_trending_media_type_time_window",
+            "GET_tv_top_rated",
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_person_person_id_tv_credits",
+            "GET_tv_popular",
+            "GET_movie_latest",
+            "GET_person_person_id"
+        ],
+        "qid": "q29"
+    },
+    {
+        "query": "What do the logo looks like for Paramount Pictures?",
+        "solution": [
+            "GET_company_company_id",
+            "GET_company_company_id_images"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/company/{company_id}",
+            "GET https://api.themoviedb.org/3/company/{company_id}/images"
+        ],
+        "api_list": [
+            "GET_company_company_id",
+            "GET_company_company_id_images",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_collection_collection_id_images",
+            "GET_tv_tv_id_images",
+            "GET_tv_popular",
+            "GET_genre_tv_list",
+            "GET_discover_tv",
+            "GET_search_person",
+            "GET_person_person_id_tv_credits",
+            "GET_tv_on_the_air",
+            "GET_person_person_id",
+            "GET_tv_tv_id_keywords",
+            "GET_tv_tv_id",
+            "GET_tv_tv_id_season_season_number",
+            "GET_search_collection",
+            "GET_tv_latest",
+            "GET_search_movie",
+            "GET_movie_now_playing",
+            "GET_movie_top_rated"
+        ],
+        "qid": "q30"
+    },
+    {
+        "query": "tell me where the company \"universal pictures\" was founded?",
+        "solution": [
+            "GET_search_company",
+            "GET_company_company_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/company",
+            "GET https://api.themoviedb.org/3/company/{company_id}"
+        ],
+        "api_list": [
+            "GET_search_company",
+            "GET_company_company_id",
+            "GET_discover_movie",
+            "GET_credit_credit_id",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_movie_movie_id_images",
+            "GET_person_person_id_movie_credits",
+            "GET_movie_movie_id_similar",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_review_review_id",
+            "GET_collection_collection_id_images",
+            "GET_genre_tv_list",
+            "GET_tv_top_rated",
+            "GET_tv_airing_today",
+            "GET_company_company_id_images",
+            "GET_tv_tv_id_season_season_number",
+            "GET_movie_movie_id_recommendations",
+            "GET_tv_on_the_air",
+            "GET_network_network_id_images",
+            "GET_search_movie"
+        ],
+        "qid": "q31"
+    },
+    {
+        "query": "When is the movie \"Titanic\" released?",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id_release_dates"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie ",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/release_dates"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id_release_dates",
+            "GET_tv_top_rated",
+            "GET_tv_tv_id_recommendations",
+            "GET_genre_movie_list",
+            "GET_tv_tv_id_reviews",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_tv_on_the_air",
+            "GET_credit_credit_id",
+            "GET_movie_now_playing",
+            "GET_collection_collection_id",
+            "GET_search_company",
+            "GET_discover_movie",
+            "GET_movie_movie_id_reviews",
+            "GET_person_popular",
+            "GET_movie_top_rated",
+            "GET_person_person_id_tv_credits",
+            "GET_movie_upcoming",
+            "GET_review_review_id",
+            "GET_collection_collection_id_images"
+        ],
+        "qid": "q32"
+    },
+    {
+        "query": "Who has starred in the first movie of Star Wars collection?",
+        "solution": [
+            "GET_search_collection",
+            "GET_collection_collection_id",
+            "GET_movie_movie_id_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/collection",
+            "GET https://api.themoviedb.org/3/collection/{collection_id}",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/credits"
+        ],
+        "api_list": [
+            "GET_search_collection",
+            "GET_collection_collection_id",
+            "GET_movie_movie_id_credits",
+            "GET_movie_movie_id_keywords",
+            "GET_movie_movie_id_similar",
+            "GET_tv_airing_today",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_tv_tv_id_similar",
+            "GET_review_review_id",
+            "GET_search_company",
+            "GET_movie_now_playing",
+            "GET_genre_movie_list",
+            "GET_person_person_id_tv_credits",
+            "GET_company_company_id_images",
+            "GET_movie_latest",
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number",
+            "GET_movie_movie_id_images",
+            "GET_collection_collection_id_images",
+            "GET_network_network_id"
+        ],
+        "qid": "q33"
+    },
+    {
+        "query": "give me a movie cover of a movie from the collection Harry Potter",
+        "solution": [
+            "GET_search_collection",
+            "GET_collection_collection_id",
+            "GET_movie_movie_id_images"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/collection",
+            "GET https://api.themoviedb.org/3/collection/{collection_id}",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/images"
+        ],
+        "api_list": [
+            "GET_search_collection",
+            "GET_collection_collection_id",
+            "GET_movie_movie_id_images",
+            "GET_tv_tv_id_season_season_number",
+            "GET_person_person_id_images",
+            "GET_movie_movie_id_reviews",
+            "GET_trending_media_type_time_window",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_tv_tv_id",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_tv_on_the_air",
+            "GET_collection_collection_id_images",
+            "GET_tv_tv_id_reviews",
+            "GET_movie_top_rated",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_person_person_id_tv_credits",
+            "GET_movie_latest",
+            "GET_company_company_id",
+            "GET_genre_movie_list",
+            "GET_search_person"
+        ],
+        "qid": "q34"
+    },
+    {
+        "query": "What are some keywords for a movie of the collection The Hunger Games?",
+        "solution": [
+            "GET_search_collection",
+            "GET_collection_collection_id",
+            "GET_movie_movie_id_keywords"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/collection",
+            "GET https://api.themoviedb.org/3/collection/{collection_id}",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/keywords"
+        ],
+        "api_list": [
+            "GET_search_collection",
+            "GET_collection_collection_id",
+            "GET_movie_movie_id_keywords",
+            "GET_person_person_id_movie_credits",
+            "GET_movie_movie_id_credits",
+            "GET_company_company_id",
+            "GET_tv_on_the_air",
+            "GET_tv_tv_id_similar",
+            "GET_genre_tv_list",
+            "GET_company_company_id_images",
+            "GET_movie_movie_id_images",
+            "GET_tv_tv_id",
+            "GET_movie_movie_id_release_dates",
+            "GET_movie_movie_id",
+            "GET_tv_tv_id_reviews",
+            "GET_discover_movie",
+            "GET_search_tv",
+            "GET_genre_movie_list",
+            "GET_search_company",
+            "GET_tv_tv_id_season_season_number_episode_episode_number"
+        ],
+        "qid": "q35"
+    },
+    {
+        "query": "When are the release dates for the movies of the collection The Hobbit?",
+        "solution": [
+            "GET_search_collection",
+            "GET_collection_collection_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/collection",
+            "GET https://api.themoviedb.org/3/collection/{collection_id}"
+        ],
+        "api_list": [
+            "GET_search_collection",
+            "GET_collection_collection_id",
+            "GET_company_company_id_images",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_tv_on_the_air",
+            "GET_collection_collection_id_images",
+            "GET_movie_movie_id_release_dates",
+            "GET_tv_popular",
+            "GET_movie_movie_id_credits",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_person_popular",
+            "GET_credit_credit_id",
+            "GET_tv_latest",
+            "GET_network_network_id_images",
+            "GET_search_movie",
+            "GET_discover_movie",
+            "GET_search_tv",
+            "GET_tv_tv_id",
+            "GET_review_review_id",
+            "GET_tv_tv_id_season_season_number_episode_episode_number"
+        ],
+        "qid": "q36"
+    },
+    {
+        "query": "List movies from The Fast and the Furious collection",
+        "solution": [
+            "GET_search_collection",
+            "GET_collection_collection_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/collection",
+            "GET https://api.themoviedb.org/3/collection/{collection_id}"
+        ],
+        "api_list": [
+            "GET_search_collection",
+            "GET_collection_collection_id",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_person_popular",
+            "GET_search_person",
+            "GET_movie_upcoming",
+            "GET_search_company",
+            "GET_genre_tv_list",
+            "GET_movie_movie_id_release_dates",
+            "GET_tv_on_the_air",
+            "GET_movie_movie_id_images",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_movie_movie_id_recommendations",
+            "GET_discover_movie",
+            "GET_movie_latest",
+            "GET_review_review_id",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_network_network_id_images",
+            "GET_tv_tv_id_reviews",
+            "GET_movie_movie_id_similar"
+        ],
+        "qid": "q37"
+    },
+    {
+        "query": "Give me a review of a movie from the collection The Fast and the Furious.",
+        "solution": [
+            "GET_search_collection",
+            "GET_collection_collection_id",
+            "GET_movie_movie_id_reviews"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/collection",
+            "GET https://api.themoviedb.org/3/collection/{collection_id}",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/reviews"
+        ],
+        "api_list": [
+            "GET_search_collection",
+            "GET_collection_collection_id",
+            "GET_movie_movie_id_reviews",
+            "GET_discover_tv",
+            "GET_trending_media_type_time_window",
+            "GET_person_person_id_images",
+            "GET_network_network_id_images",
+            "GET_search_person",
+            "GET_tv_tv_id_keywords",
+            "GET_movie_movie_id_release_dates",
+            "GET_person_popular",
+            "GET_tv_airing_today",
+            "GET_movie_movie_id_images",
+            "GET_tv_on_the_air",
+            "GET_collection_collection_id_images",
+            "GET_movie_latest",
+            "GET_person_person_id_tv_credits",
+            "GET_company_company_id_images",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_movie_movie_id_keywords"
+        ],
+        "qid": "q38"
+    },
+    {
+        "query": "When was the first movie of the collection Lord of the Rings released?",
+        "solution": [
+            "GET_search_collection",
+            "GET_collection_collection_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/collection",
+            "GET https://api.themoviedb.org/3/collection/{collection_id}"
+        ],
+        "api_list": [
+            "GET_search_collection",
+            "GET_collection_collection_id",
+            "GET_person_person_id_tv_credits",
+            "GET_search_company",
+            "GET_tv_tv_id_images",
+            "GET_search_person",
+            "GET_tv_tv_id_season_season_number",
+            "GET_movie_latest",
+            "GET_tv_top_rated",
+            "GET_network_network_id",
+            "GET_tv_airing_today",
+            "GET_movie_popular",
+            "GET_movie_movie_id_recommendations",
+            "GET_movie_movie_id_credits",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_movie_top_rated",
+            "GET_tv_tv_id",
+            "GET_search_tv",
+            "GET_tv_tv_id_similar",
+            "GET_tv_tv_id_credits"
+        ],
+        "qid": "q39"
+    },
+    {
+        "query": "tell me the directors of the first season of House of Cards",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/season/{season_number}/credits"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_tv_latest",
+            "GET_trending_media_type_time_window",
+            "GET_review_review_id",
+            "GET_discover_movie",
+            "GET_search_movie",
+            "GET_tv_popular",
+            "GET_person_person_id_movie_credits",
+            "GET_movie_movie_id",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_movie_latest",
+            "GET_person_person_id",
+            "GET_tv_tv_id_similar",
+            "GET_tv_airing_today",
+            "GET_tv_tv_id_reviews",
+            "GET_company_company_id",
+            "GET_person_popular",
+            "GET_person_person_id_images",
+            "GET_person_person_id_tv_credits"
+        ],
+        "qid": "q40"
+    },
+    {
+        "query": "I want some tv shows that similar to House of Cards",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id_similar"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/similar"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id_similar",
+            "GET_collection_collection_id_images",
+            "GET_movie_movie_id_keywords",
+            "GET_movie_latest",
+            "GET_movie_movie_id_recommendations",
+            "GET_company_company_id_images",
+            "GET_person_person_id_images",
+            "GET_tv_tv_id_season_season_number",
+            "GET_person_popular",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_genre_tv_list",
+            "GET_movie_movie_id",
+            "GET_tv_airing_today",
+            "GET_person_person_id_tv_credits",
+            "GET_tv_tv_id_reviews",
+            "GET_company_company_id",
+            "GET_search_collection",
+            "GET_discover_tv",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images"
+        ],
+        "qid": "q41"
+    },
+    {
+        "query": "When did the most popular TV show currently on the air start?",
+        "solution": [
+            "GET_tv_on_the_air",
+            "GET_tv_tv_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/tv/on_the_air",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}"
+        ],
+        "api_list": [
+            "GET_tv_on_the_air",
+            "GET_tv_tv_id",
+            "GET_tv_tv_id_credits",
+            "GET_company_company_id",
+            "GET_tv_airing_today",
+            "GET_search_movie",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_collection_collection_id_images",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_tv_tv_id_keywords",
+            "GET_movie_movie_id",
+            "GET_search_collection",
+            "GET_tv_tv_id_season_season_number",
+            "GET_collection_collection_id",
+            "GET_movie_movie_id_reviews",
+            "GET_movie_movie_id_credits",
+            "GET_movie_movie_id_similar",
+            "GET_network_network_id",
+            "GET_tv_latest",
+            "GET_review_review_id"
+        ],
+        "qid": "q42"
+    },
+    {
+        "query": "tell me a few more works directed by the director of Django Unchained",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits",
+            "GET_person_person_id_movie_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/credits",
+            "GET https://api.themoviedb.org/3/person/{person_id}/movie_credits"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits",
+            "GET_person_person_id_movie_credits",
+            "GET_collection_collection_id_images",
+            "GET_tv_tv_id",
+            "GET_movie_latest",
+            "GET_genre_tv_list",
+            "GET_movie_now_playing",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_tv_airing_today",
+            "GET_tv_on_the_air",
+            "GET_tv_tv_id_keywords",
+            "GET_tv_tv_id_reviews",
+            "GET_tv_tv_id_season_season_number",
+            "GET_person_person_id_images",
+            "GET_tv_tv_id_recommendations",
+            "GET_movie_movie_id_recommendations",
+            "GET_tv_tv_id_credits",
+            "GET_person_person_id",
+            "GET_collection_collection_id"
+        ],
+        "qid": "q43"
+    },
+    {
+        "query": "tell me the cast of a TV show on the air",
+        "solution": [
+            "GET_tv_on_the_air",
+            "GET_tv_tv_id_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/tv/on_the_air",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/credits"
+        ],
+        "api_list": [
+            "GET_tv_on_the_air",
+            "GET_tv_tv_id_credits",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_company_company_id",
+            "GET_person_popular",
+            "GET_movie_latest",
+            "GET_tv_tv_id_similar",
+            "GET_movie_movie_id_release_dates",
+            "GET_tv_latest",
+            "GET_tv_tv_id",
+            "GET_tv_top_rated",
+            "GET_movie_upcoming",
+            "GET_discover_movie",
+            "GET_tv_airing_today",
+            "GET_search_collection",
+            "GET_movie_movie_id_reviews",
+            "GET_person_person_id_images",
+            "GET_person_person_id_tv_credits",
+            "GET_network_network_id",
+            "GET_tv_tv_id_season_season_number"
+        ],
+        "qid": "q44"
+    },
+    {
+        "query": "I need a review for Breaking Bad",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id_reviews"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/reviews"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id_reviews",
+            "GET_movie_movie_id_credits",
+            "GET_movie_movie_id_release_dates",
+            "GET_company_company_id_images",
+            "GET_person_popular",
+            "GET_discover_tv",
+            "GET_movie_movie_id_reviews",
+            "GET_movie_movie_id_keywords",
+            "GET_trending_media_type_time_window",
+            "GET_movie_movie_id_similar",
+            "GET_person_person_id_images",
+            "GET_movie_movie_id",
+            "GET_person_person_id",
+            "GET_genre_tv_list",
+            "GET_tv_tv_id_recommendations",
+            "GET_review_review_id",
+            "GET_search_company",
+            "GET_collection_collection_id_images",
+            "GET_tv_tv_id_similar"
+        ],
+        "qid": "q45"
+    },
+    {
+        "query": "I'm watching the tv series The Last Of Us and I need some more recommendations",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id_recommendations"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/recommendations"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id_recommendations",
+            "GET_search_movie",
+            "GET_movie_movie_id",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_tv_tv_id_credits",
+            "GET_movie_movie_id_credits",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_movie_movie_id_images",
+            "GET_movie_movie_id_keywords",
+            "GET_tv_tv_id_similar",
+            "GET_movie_movie_id_recommendations",
+            "GET_person_person_id",
+            "GET_review_review_id",
+            "GET_movie_now_playing",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_discover_movie",
+            "GET_tv_tv_id_season_season_number",
+            "GET_collection_collection_id_images",
+            "GET_credit_credit_id"
+        ],
+        "qid": "q46"
+    },
+    {
+        "query": "I'm watching a TV show called The Last Of Us and I need some more recommendations",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id_recommendations"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/recommendations"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id_recommendations",
+            "GET_tv_popular",
+            "GET_movie_movie_id",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_genre_movie_list",
+            "GET_movie_movie_id_recommendations",
+            "GET_tv_tv_id",
+            "GET_tv_top_rated",
+            "GET_movie_now_playing",
+            "GET_collection_collection_id",
+            "GET_discover_tv",
+            "GET_network_network_id",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_trending_media_type_time_window",
+            "GET_search_company",
+            "GET_person_popular",
+            "GET_credit_credit_id",
+            "GET_person_person_id",
+            "GET_movie_movie_id_reviews"
+        ],
+        "qid": "q47"
+    },
+    {
+        "query": "tell me the guest star from season 3, episode 24 of Friends",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/season/{season_number}/episode/{episode_number}/credits"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_search_company",
+            "GET_tv_latest",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_tv_popular",
+            "GET_tv_tv_id_images",
+            "GET_tv_tv_id_credits",
+            "GET_trending_media_type_time_window",
+            "GET_movie_top_rated",
+            "GET_movie_popular",
+            "GET_person_popular",
+            "GET_movie_movie_id_similar",
+            "GET_movie_movie_id",
+            "GET_tv_tv_id_keywords",
+            "GET_tv_tv_id_reviews",
+            "GET_tv_tv_id_recommendations",
+            "GET_movie_now_playing",
+            "GET_credit_credit_id",
+            "GET_search_person"
+        ],
+        "qid": "q48"
+    },
+    {
+        "query": "Who is the lead actor in the most popular TV show?",
+        "solution": [
+            "GET_tv_popular",
+            "GET_tv_tv_id_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/tv/popular",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/credits"
+        ],
+        "api_list": [
+            "GET_tv_popular",
+            "GET_tv_tv_id_credits",
+            "GET_tv_tv_id_keywords",
+            "GET_network_network_id_images",
+            "GET_collection_collection_id_images",
+            "GET_movie_movie_id_images",
+            "GET_tv_on_the_air",
+            "GET_discover_movie",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_company_company_id",
+            "GET_tv_tv_id_similar",
+            "GET_genre_tv_list",
+            "GET_person_person_id",
+            "GET_movie_movie_id_recommendations",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_search_tv",
+            "GET_tv_airing_today",
+            "GET_tv_tv_id_recommendations",
+            "GET_tv_tv_id_reviews",
+            "GET_tv_top_rated"
+        ],
+        "qid": "q49"
+    },
+    {
+        "query": "give me a keyword of the top-1 rated TV show",
+        "solution": [
+            "GET_tv_top_rated",
+            "GET_tv_tv_id_keywords"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/tv/top_rated",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/keywords"
+        ],
+        "api_list": [
+            "GET_tv_top_rated",
+            "GET_tv_tv_id_keywords",
+            "GET_search_collection",
+            "GET_search_company",
+            "GET_tv_tv_id_similar",
+            "GET_tv_tv_id_recommendations",
+            "GET_tv_tv_id_reviews",
+            "GET_genre_movie_list",
+            "GET_search_tv",
+            "GET_discover_tv",
+            "GET_person_person_id",
+            "GET_movie_movie_id_recommendations",
+            "GET_tv_tv_id_season_season_number",
+            "GET_trending_media_type_time_window",
+            "GET_movie_movie_id_keywords",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_movie_popular",
+            "GET_search_person",
+            "GET_person_person_id_images",
+            "GET_discover_movie"
+        ],
+        "qid": "q50"
+    },
+    {
+        "query": "give me a poster of 2 Broke Girls",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id_images"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/images"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id_images",
+            "GET_collection_collection_id_images",
+            "GET_review_review_id",
+            "GET_movie_latest",
+            "GET_movie_movie_id_recommendations",
+            "GET_trending_media_type_time_window",
+            "GET_movie_movie_id_reviews",
+            "GET_movie_movie_id_keywords",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_person_person_id",
+            "GET_tv_popular",
+            "GET_search_company",
+            "GET_movie_movie_id_credits",
+            "GET_collection_collection_id",
+            "GET_tv_tv_id_recommendations",
+            "GET_movie_now_playing",
+            "GET_search_person",
+            "GET_movie_movie_id_images",
+            "GET_search_movie"
+        ],
+        "qid": "q51"
+    },
+    {
+        "query": "How many episodes does 2 Broke Girls have in total?",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id",
+            "GET_tv_tv_id_similar",
+            "GET_person_person_id_tv_credits",
+            "GET_movie_movie_id_credits",
+            "GET_tv_tv_id_credits",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_movie_movie_id_images",
+            "GET_genre_movie_list",
+            "GET_person_person_id_movie_credits",
+            "GET_person_person_id",
+            "GET_tv_top_rated",
+            "GET_search_movie",
+            "GET_search_collection",
+            "GET_movie_movie_id_keywords",
+            "GET_company_company_id",
+            "GET_movie_popular",
+            "GET_movie_movie_id_reviews",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_tv_latest"
+        ],
+        "qid": "q52"
+    },
+    {
+        "query": "When was the company that produced The Big Bang Theory founded?",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id",
+            "GET_company_company_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}",
+            "GET https://api.themoviedb.org/3/company/{company_id}"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id",
+            "GET_company_company_id",
+            "GET_person_person_id_images",
+            "GET_person_popular",
+            "GET_discover_tv",
+            "GET_movie_movie_id",
+            "GET_trending_media_type_time_window",
+            "GET_movie_latest",
+            "GET_tv_popular",
+            "GET_movie_top_rated",
+            "GET_collection_collection_id",
+            "GET_tv_top_rated",
+            "GET_movie_movie_id_similar",
+            "GET_tv_tv_id_similar",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_movie_movie_id_keywords",
+            "GET_tv_tv_id_recommendations",
+            "GET_review_review_id",
+            "GET_network_network_id_images"
+        ],
+        "qid": "q53"
+    },
+    {
+        "query": "When was the TV show The Big Bang Theory created?",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id",
+            "GET_tv_tv_id_credits",
+            "GET_genre_movie_list",
+            "GET_tv_tv_id_keywords",
+            "GET_network_network_id_images",
+            "GET_tv_on_the_air",
+            "GET_tv_tv_id_season_season_number",
+            "GET_movie_latest",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_company_company_id",
+            "GET_search_person",
+            "GET_tv_latest",
+            "GET_tv_tv_id_recommendations",
+            "GET_review_review_id",
+            "GET_tv_tv_id_images",
+            "GET_search_collection",
+            "GET_movie_movie_id_release_dates",
+            "GET_movie_movie_id_similar",
+            "GET_discover_tv"
+        ],
+        "qid": "q54"
+    },
+    {
+        "query": "give me a keyword of the most popular TV show",
+        "solution": [
+            "GET_tv_popular",
+            "GET_tv_tv_id_keywords"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/tv/popular",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/keywords"
+        ],
+        "api_list": [
+            "GET_tv_popular",
+            "GET_tv_tv_id_keywords",
+            "GET_person_person_id_images",
+            "GET_tv_tv_id_reviews",
+            "GET_movie_movie_id_credits",
+            "GET_person_person_id_tv_credits",
+            "GET_movie_movie_id_release_dates",
+            "GET_discover_movie",
+            "GET_tv_on_the_air",
+            "GET_movie_movie_id_keywords",
+            "GET_tv_latest",
+            "GET_company_company_id_images",
+            "GET_person_popular",
+            "GET_review_review_id",
+            "GET_tv_tv_id_recommendations",
+            "GET_movie_movie_id_reviews",
+            "GET_search_collection",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_search_tv"
+        ],
+        "qid": "q55"
+    },
+    {
+        "query": "What did the third episode of the second season of Westworld talk about?",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_episode_episode_number"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/season/{season_number}/episode/{episode_number}"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_movie_movie_id",
+            "GET_tv_airing_today",
+            "GET_tv_popular",
+            "GET_credit_credit_id",
+            "GET_movie_top_rated",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_tv_tv_id_reviews",
+            "GET_person_popular",
+            "GET_tv_on_the_air",
+            "GET_movie_movie_id_images",
+            "GET_movie_upcoming",
+            "GET_tv_tv_id_similar",
+            "GET_tv_tv_id_recommendations",
+            "GET_person_person_id_movie_credits",
+            "GET_person_person_id_images",
+            "GET_network_network_id",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_tv_tv_id_credits"
+        ],
+        "qid": "q56"
+    },
+    {
+        "query": "Tell me the air date of the second season of Game of Thrones",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/season/{season_number}"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number",
+            "GET_person_person_id_movie_credits",
+            "GET_tv_tv_id",
+            "GET_person_person_id",
+            "GET_tv_tv_id_images",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_collection_collection_id_images",
+            "GET_tv_latest",
+            "GET_collection_collection_id",
+            "GET_movie_movie_id_keywords",
+            "GET_movie_top_rated",
+            "GET_company_company_id",
+            "GET_tv_on_the_air",
+            "GET_tv_popular",
+            "GET_search_movie",
+            "GET_genre_movie_list",
+            "GET_discover_tv",
+            "GET_tv_airing_today",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images"
+        ],
+        "qid": "q57"
+    },
+    {
+        "query": " give me a poster of the third episode of Band of Brothers",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/season/{season_number}/episode/{episode_number}/images"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_tv_latest",
+            "GET_movie_movie_id_release_dates",
+            "GET_company_company_id_images",
+            "GET_movie_popular",
+            "GET_movie_latest",
+            "GET_movie_movie_id",
+            "GET_movie_movie_id_recommendations",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_tv_tv_id_recommendations",
+            "GET_tv_on_the_air",
+            "GET_tv_tv_id",
+            "GET_tv_tv_id_season_season_number",
+            "GET_movie_movie_id_credits",
+            "GET_tv_tv_id_images",
+            "GET_movie_upcoming",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_movie_movie_id_reviews",
+            "GET_search_collection"
+        ],
+        "qid": "q58"
+    },
+    {
+        "query": "What is the logo of the network that produced Game of Thrones?",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id",
+            "GET_network_network_id_images"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}",
+            "GET https://api.themoviedb.org/3/network/{network_id}/images"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id",
+            "GET_network_network_id_images",
+            "GET_person_person_id_images",
+            "GET_search_movie",
+            "GET_person_popular",
+            "GET_tv_top_rated",
+            "GET_person_person_id",
+            "GET_search_collection",
+            "GET_network_network_id",
+            "GET_tv_tv_id_credits",
+            "GET_movie_movie_id_reviews",
+            "GET_collection_collection_id",
+            "GET_tv_tv_id_similar",
+            "GET_movie_movie_id_similar",
+            "GET_search_person",
+            "GET_tv_tv_id_reviews",
+            "GET_movie_movie_id_keywords",
+            "GET_company_company_id_images",
+            "GET_company_company_id"
+        ],
+        "qid": "q59"
+    },
+    {
+        "query": "give me the homepage of the network that produced Game of Thrones",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id",
+            "GET_network_network_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}",
+            "GET https://api.themoviedb.org/3/network/{network_id}"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id",
+            "GET_network_network_id",
+            "GET_movie_movie_id",
+            "GET_tv_tv_id_recommendations",
+            "GET_person_popular",
+            "GET_tv_top_rated",
+            "GET_company_company_id_images",
+            "GET_discover_tv",
+            "GET_genre_tv_list",
+            "GET_tv_tv_id_images",
+            "GET_search_person",
+            "GET_movie_movie_id_credits",
+            "GET_tv_tv_id_credits",
+            "GET_discover_movie",
+            "GET_tv_tv_id_similar",
+            "GET_credit_credit_id",
+            "GET_search_movie",
+            "GET_tv_latest",
+            "GET_company_company_id"
+        ],
+        "qid": "q60"
+    },
+    {
+        "query": "give me a keyword of the most popular TV show currently",
+        "solution": [
+            "GET_tv_popular",
+            "GET_tv_tv_id_keywords"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/tv/popular",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/keywords"
+        ],
+        "api_list": [
+            "GET_tv_popular",
+            "GET_tv_tv_id_keywords",
+            "GET_tv_tv_id_recommendations",
+            "GET_movie_latest",
+            "GET_movie_movie_id_credits",
+            "GET_movie_movie_id_keywords",
+            "GET_tv_tv_id_credits",
+            "GET_movie_upcoming",
+            "GET_network_network_id",
+            "GET_genre_tv_list",
+            "GET_tv_tv_id_images",
+            "GET_person_person_id",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_genre_movie_list",
+            "GET_movie_movie_id_similar",
+            "GET_person_popular",
+            "GET_movie_popular",
+            "GET_company_company_id",
+            "GET_tv_tv_id_similar",
+            "GET_search_tv"
+        ],
+        "qid": "q61"
+    },
+    {
+        "query": "Where is the headquarter of the company that produced currently the most popular TV show?",
+        "solution": [
+            "GET_tv_popular",
+            "GET_tv_tv_id",
+            "GET_company_company_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/tv/popular",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}",
+            "GET https://api.themoviedb.org/3/company/{company_id}"
+        ],
+        "api_list": [
+            "GET_tv_popular",
+            "GET_tv_tv_id",
+            "GET_company_company_id",
+            "GET_tv_latest",
+            "GET_movie_popular",
+            "GET_tv_tv_id_images",
+            "GET_person_person_id",
+            "GET_movie_upcoming",
+            "GET_tv_tv_id_season_season_number",
+            "GET_tv_tv_id_credits",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_movie_now_playing",
+            "GET_movie_movie_id_keywords",
+            "GET_movie_movie_id_credits",
+            "GET_search_person",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_search_tv",
+            "GET_review_review_id",
+            "GET_tv_tv_id_recommendations",
+            "GET_tv_on_the_air"
+        ],
+        "qid": "q62"
+    },
+    {
+        "query": "What is the genre of The Mandalorian?",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_movie_movie_id_reviews",
+            "GET_tv_tv_id_reviews",
+            "GET_movie_movie_id_release_dates",
+            "GET_network_network_id_images",
+            "GET_movie_latest",
+            "GET_person_person_id_movie_credits",
+            "GET_discover_tv",
+            "GET_tv_airing_today",
+            "GET_tv_popular",
+            "GET_collection_collection_id",
+            "GET_search_movie",
+            "GET_tv_tv_id_images",
+            "GET_tv_tv_id_recommendations",
+            "GET_search_company",
+            "GET_movie_popular",
+            "GET_collection_collection_id_images",
+            "GET_genre_tv_list"
+        ],
+        "qid": "q63"
+    },
+    {
+        "query": "When is the birthday of the lead actor of today's most trending TV show?",
+        "solution": [
+            "GET_trending_media_type_time_window",
+            "GET_tv_tv_id_credits",
+            "GET_person_person_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/trending/{media_type}/{time_window}",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/credits",
+            "GET https://api.themoviedb.org/3/person/{person_id}"
+        ],
+        "api_list": [
+            "GET_trending_media_type_time_window",
+            "GET_tv_tv_id_credits",
+            "GET_person_person_id",
+            "GET_tv_tv_id_keywords",
+            "GET_tv_tv_id_recommendations",
+            "GET_tv_tv_id_reviews",
+            "GET_movie_latest",
+            "GET_person_person_id_images",
+            "GET_genre_movie_list",
+            "GET_tv_latest",
+            "GET_movie_movie_id_credits",
+            "GET_company_company_id_images",
+            "GET_movie_movie_id_release_dates",
+            "GET_tv_on_the_air",
+            "GET_tv_tv_id_similar",
+            "GET_collection_collection_id",
+            "GET_person_person_id_tv_credits",
+            "GET_tv_tv_id",
+            "GET_company_company_id",
+            "GET_movie_movie_id_images"
+        ],
+        "qid": "q64"
+    },
+    {
+        "query": "What is the homepage of the network that produced today's most trending TV show?",
+        "solution": [
+            "GET_trending_media_type_time_window",
+            "GET_tv_tv_id",
+            "GET_network_network_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/trending/{media_type}/{time_window}",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}",
+            "GET https://api.themoviedb.org/3/network/{network_id}"
+        ],
+        "api_list": [
+            "GET_trending_media_type_time_window",
+            "GET_tv_tv_id",
+            "GET_network_network_id",
+            "GET_discover_tv",
+            "GET_company_company_id_images",
+            "GET_discover_movie",
+            "GET_search_company",
+            "GET_movie_now_playing",
+            "GET_movie_movie_id_reviews",
+            "GET_movie_upcoming",
+            "GET_tv_tv_id_credits",
+            "GET_movie_latest",
+            "GET_person_person_id",
+            "GET_tv_on_the_air",
+            "GET_network_network_id_images",
+            "GET_tv_latest",
+            "GET_movie_movie_id_keywords",
+            "GET_movie_movie_id_similar",
+            "GET_movie_movie_id_credits",
+            "GET_tv_airing_today"
+        ],
+        "qid": "q65"
+    },
+    {
+        "query": "give me a review of today's most trending TV show",
+        "solution": [
+            "GET_trending_media_type_time_window",
+            "GET_tv_tv_id_reviews"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/trending/{media_type}/{time_window}",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/reviews"
+        ],
+        "api_list": [
+            "GET_trending_media_type_time_window",
+            "GET_tv_tv_id_reviews",
+            "GET_network_network_id_images",
+            "GET_company_company_id",
+            "GET_person_popular",
+            "GET_search_collection",
+            "GET_tv_tv_id_similar",
+            "GET_search_tv",
+            "GET_tv_popular",
+            "GET_tv_tv_id_season_season_number",
+            "GET_tv_tv_id_credits",
+            "GET_movie_movie_id_reviews",
+            "GET_movie_movie_id_keywords",
+            "GET_tv_tv_id_recommendations",
+            "GET_person_person_id_tv_credits",
+            "GET_movie_movie_id_recommendations",
+            "GET_movie_upcoming",
+            "GET_collection_collection_id",
+            "GET_discover_tv",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images"
+        ],
+        "qid": "q66"
+    },
+    {
+        "query": "I prefer a TV show that similar to today's most trending TV show",
+        "solution": [
+            "GET_trending_media_type_time_window",
+            "GET_tv_tv_id_similar"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/trending/{media_type}/{time_window}",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/similar"
+        ],
+        "api_list": [
+            "GET_trending_media_type_time_window",
+            "GET_tv_tv_id_similar",
+            "GET_network_network_id_images",
+            "GET_tv_on_the_air",
+            "GET_movie_movie_id_recommendations",
+            "GET_movie_movie_id_credits",
+            "GET_search_movie",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_tv_tv_id_keywords",
+            "GET_discover_tv",
+            "GET_review_review_id",
+            "GET_tv_tv_id_credits",
+            "GET_company_company_id_images",
+            "GET_tv_airing_today",
+            "GET_tv_popular",
+            "GET_movie_movie_id_similar",
+            "GET_genre_movie_list",
+            "GET_discover_movie",
+            "GET_person_person_id",
+            "GET_movie_now_playing"
+        ],
+        "qid": "q67"
+    },
+    {
+        "query": "I need a poster of today's most trending TV show",
+        "solution": [
+            "GET_trending_media_type_time_window",
+            "GET_tv_tv_id_images"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/trending/{media_type}/{time_window}",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/images"
+        ],
+        "api_list": [
+            "GET_trending_media_type_time_window",
+            "GET_tv_tv_id_images",
+            "GET_company_company_id",
+            "GET_tv_tv_id_season_season_number",
+            "GET_movie_top_rated",
+            "GET_network_network_id",
+            "GET_company_company_id_images",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_person_popular",
+            "GET_tv_tv_id_recommendations",
+            "GET_collection_collection_id_images",
+            "GET_person_person_id",
+            "GET_discover_tv",
+            "GET_search_movie",
+            "GET_movie_movie_id_recommendations",
+            "GET_person_person_id_movie_credits",
+            "GET_movie_upcoming",
+            "GET_review_review_id",
+            "GET_person_person_id_images",
+            "GET_tv_top_rated"
+        ],
+        "qid": "q68"
+    },
+    {
+        "query": "Who has worked with Jeremy Clarkson in his most popular TV show?",
+        "solution": [
+            "GET_search_person",
+            "GET_person_person_id_tv_credits",
+            "GET_tv_tv_id_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/person",
+            "GET https://api.themoviedb.org/3/person/{person_id}/tv_credits",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/credits"
+        ],
+        "api_list": [
+            "GET_search_person",
+            "GET_person_person_id_tv_credits",
+            "GET_tv_tv_id_credits",
+            "GET_search_tv",
+            "GET_genre_tv_list",
+            "GET_tv_tv_id_similar",
+            "GET_search_movie",
+            "GET_tv_top_rated",
+            "GET_tv_latest",
+            "GET_movie_top_rated",
+            "GET_movie_movie_id_similar",
+            "GET_person_popular",
+            "GET_tv_tv_id_keywords",
+            "GET_person_person_id_movie_credits",
+            "GET_person_person_id_images",
+            "GET_movie_movie_id_reviews",
+            "GET_company_company_id_images",
+            "GET_tv_tv_id_images",
+            "GET_movie_movie_id_release_dates",
+            "GET_discover_movie"
+        ],
+        "qid": "q69"
+    },
+    {
+        "query": "What does the lead actor of the first episode of second season of Black Mirror look like?",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id_credits",
+            "GET_person_person_id_images"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/credits",
+            "GET https://api.themoviedb.org/3/person/{person_id}/images"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id_credits",
+            "GET_person_person_id_images",
+            "GET_network_network_id_images",
+            "GET_person_person_id",
+            "GET_tv_tv_id_reviews",
+            "GET_person_popular",
+            "GET_search_movie",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_company_company_id_images",
+            "GET_tv_latest",
+            "GET_company_company_id",
+            "GET_movie_movie_id_credits",
+            "GET_movie_movie_id_reviews",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_person_person_id_tv_credits",
+            "GET_movie_latest",
+            "GET_movie_movie_id_keywords",
+            "GET_tv_top_rated",
+            "GET_tv_popular"
+        ],
+        "qid": "q70"
+    },
+    {
+        "query": "When is the lead actor of The Mandalorian born?",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id_credits",
+            "GET_person_person_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/credits",
+            "GET https://api.themoviedb.org/3/person/{person_id}"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id_credits",
+            "GET_person_person_id",
+            "GET_network_network_id_images",
+            "GET_tv_tv_id_images",
+            "GET_movie_movie_id_reviews",
+            "GET_trending_media_type_time_window",
+            "GET_person_popular",
+            "GET_person_person_id_tv_credits",
+            "GET_movie_movie_id",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_genre_tv_list",
+            "GET_movie_movie_id_release_dates",
+            "GET_tv_top_rated",
+            "GET_movie_top_rated",
+            "GET_movie_movie_id_credits",
+            "GET_movie_upcoming",
+            "GET_review_review_id",
+            "GET_movie_latest",
+            "GET_collection_collection_id"
+        ],
+        "qid": "q71"
+    },
+    {
+        "query": "Who is the lead actor of today's most popular TV show?",
+        "solution": [
+            "GET_tv_popular",
+            "GET_tv_tv_id_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/tv/popular",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/credits"
+        ],
+        "api_list": [
+            "GET_tv_popular",
+            "GET_tv_tv_id_credits",
+            "GET_movie_latest",
+            "GET_search_company",
+            "GET_tv_latest",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_movie_popular",
+            "GET_person_person_id_tv_credits",
+            "GET_tv_tv_id_reviews",
+            "GET_collection_collection_id_images",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_tv_tv_id_season_season_number",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_search_collection",
+            "GET_person_person_id",
+            "GET_movie_movie_id",
+            "GET_trending_media_type_time_window",
+            "GET_discover_movie",
+            "GET_search_tv",
+            "GET_network_network_id_images"
+        ],
+        "qid": "q72"
+    },
+    {
+        "query": "give me a photo of the lead actor of the most popular TV show of this week",
+        "solution": [
+            "GET_tv_popular",
+            "GET_tv_tv_id_credits",
+            "GET_person_person_id_images"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/tv/popular",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/credits",
+            "GET https://api.themoviedb.org/3/person/{person_id}/images"
+        ],
+        "api_list": [
+            "GET_tv_popular",
+            "GET_tv_tv_id_credits",
+            "GET_person_person_id_images",
+            "GET_search_tv",
+            "GET_movie_movie_id_images",
+            "GET_credit_credit_id",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_tv_tv_id_images",
+            "GET_tv_tv_id_reviews",
+            "GET_genre_movie_list",
+            "GET_movie_movie_id_reviews",
+            "GET_review_review_id",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_search_company",
+            "GET_collection_collection_id",
+            "GET_company_company_id",
+            "GET_movie_movie_id_credits",
+            "GET_network_network_id",
+            "GET_search_collection",
+            "GET_movie_upcoming"
+        ],
+        "qid": "q73"
+    },
+    {
+        "query": "give me some reviews of Cate Blanchett's latest TV show",
+        "solution": [
+            "GET_search_person",
+            "GET_person_person_id_tv_credits",
+            "GET_tv_tv_id_reviews"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/person",
+            "GET https://api.themoviedb.org/3/person/{person_id}/tv_credits",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/reviews"
+        ],
+        "api_list": [
+            "GET_search_person",
+            "GET_person_person_id_tv_credits",
+            "GET_tv_tv_id_reviews",
+            "GET_movie_movie_id_reviews",
+            "GET_discover_tv",
+            "GET_credit_credit_id",
+            "GET_movie_upcoming",
+            "GET_tv_tv_id_credits",
+            "GET_search_company",
+            "GET_search_movie",
+            "GET_tv_latest",
+            "GET_movie_movie_id_similar",
+            "GET_discover_movie",
+            "GET_collection_collection_id",
+            "GET_collection_collection_id_images",
+            "GET_genre_movie_list",
+            "GET_company_company_id",
+            "GET_company_company_id_images",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_review_review_id"
+        ],
+        "qid": "q74"
+    },
+    {
+        "query": "What is David Schwimmer's most popular TV show?",
+        "solution": [
+            "GET_search_person",
+            "GET_person_person_id_tv_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/person",
+            "GET https://api.themoviedb.org/3/person/{person_id}/tv_credits"
+        ],
+        "api_list": [
+            "GET_search_person",
+            "GET_person_person_id_tv_credits",
+            "GET_tv_on_the_air",
+            "GET_tv_tv_id_images",
+            "GET_genre_movie_list",
+            "GET_tv_tv_id_keywords",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_search_movie",
+            "GET_network_network_id_images",
+            "GET_tv_tv_id",
+            "GET_person_person_id_movie_credits",
+            "GET_movie_movie_id_credits",
+            "GET_movie_popular",
+            "GET_tv_tv_id_reviews",
+            "GET_tv_tv_id_similar",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_movie_movie_id_keywords",
+            "GET_tv_latest",
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_credits"
+        ],
+        "qid": "q75"
+    },
+    {
+        "query": "Who directed the third episode of the second season of Black Mirror?",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/season/{season_number}/credits"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_movie_movie_id_reviews",
+            "GET_credit_credit_id",
+            "GET_person_person_id_images",
+            "GET_movie_movie_id_release_dates",
+            "GET_movie_movie_id",
+            "GET_movie_movie_id_images",
+            "GET_tv_tv_id_similar",
+            "GET_movie_latest",
+            "GET_tv_tv_id",
+            "GET_person_popular",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_tv_tv_id_credits",
+            "GET_tv_top_rated",
+            "GET_genre_movie_list",
+            "GET_network_network_id_images",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_search_person",
+            "GET_movie_popular"
+        ],
+        "qid": "q76"
+    },
+    {
+        "query": "give me some movies that Christopher Nolan known for",
+        "solution": [
+            "GET_search_person"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/person"
+        ],
+        "api_list": [
+            "GET_search_person",
+            "GET_movie_movie_id",
+            "GET_tv_tv_id_reviews",
+            "GET_movie_movie_id_similar",
+            "GET_tv_latest",
+            "GET_discover_movie",
+            "GET_person_person_id_tv_credits",
+            "GET_tv_tv_id",
+            "GET_search_tv",
+            "GET_review_review_id",
+            "GET_person_person_id_images",
+            "GET_genre_movie_list",
+            "GET_tv_popular",
+            "GET_movie_now_playing",
+            "GET_tv_on_the_air",
+            "GET_trending_media_type_time_window",
+            "GET_tv_tv_id_recommendations",
+            "GET_movie_latest",
+            "GET_tv_tv_id_similar",
+            "GET_person_person_id"
+        ],
+        "qid": "q77"
+    },
+    {
+        "query": "Avatar versus Avatar: The Way of Water, which has a higher rating",
+        "solution": [
+            "GET_search_movie",
+            "GET_search_movie"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/search/movie"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_search_movie",
+            "GET_network_network_id",
+            "GET_search_collection",
+            "GET_tv_on_the_air",
+            "GET_tv_tv_id_images",
+            "GET_movie_now_playing",
+            "GET_movie_latest",
+            "GET_movie_movie_id_recommendations",
+            "GET_tv_tv_id",
+            "GET_tv_airing_today",
+            "GET_movie_popular",
+            "GET_tv_top_rated",
+            "GET_company_company_id",
+            "GET_tv_tv_id_similar",
+            "GET_person_person_id",
+            "GET_person_person_id_movie_credits",
+            "GET_tv_tv_id_reviews",
+            "GET_movie_movie_id_keywords",
+            "GET_tv_tv_id_keywords"
+        ],
+        "qid": "q78"
+    },
+    {
+        "query": "Show me some English movies rating no less than 7.0 and no earlier than 2021",
+        "solution": [
+            "GET_discover_movie"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/discover/movie"
+        ],
+        "api_list": [
+            "GET_discover_movie",
+            "GET_genre_tv_list",
+            "GET_review_review_id",
+            "GET_movie_now_playing",
+            "GET_genre_movie_list",
+            "GET_tv_tv_id_credits",
+            "GET_network_network_id_images",
+            "GET_credit_credit_id",
+            "GET_company_company_id_images",
+            "GET_movie_movie_id_credits",
+            "GET_movie_movie_id_reviews",
+            "GET_movie_movie_id_similar",
+            "GET_trending_media_type_time_window",
+            "GET_tv_tv_id_recommendations",
+            "GET_tv_on_the_air",
+            "GET_movie_movie_id_release_dates",
+            "GET_tv_tv_id_keywords",
+            "GET_company_company_id",
+            "GET_person_popular",
+            "GET_tv_tv_id_images"
+        ],
+        "qid": "q79"
+    },
+    {
+        "query": "What is the genre of the movie Lord of the Ring?",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id",
+            "GET_movie_now_playing",
+            "GET_search_collection",
+            "GET_person_person_id",
+            "GET_movie_popular",
+            "GET_tv_on_the_air",
+            "GET_discover_movie",
+            "GET_review_review_id",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_movie_movie_id_recommendations",
+            "GET_movie_latest",
+            "GET_search_tv",
+            "GET_movie_movie_id_credits",
+            "GET_person_popular",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_tv_top_rated",
+            "GET_tv_tv_id_images",
+            "GET_person_person_id_images",
+            "GET_trending_media_type_time_window"
+        ],
+        "qid": "q80"
+    },
+    {
+        "query": "What is the birthday of the most popular person right now?",
+        "solution": [
+            "GET_person_popular",
+            "GET_person_person_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/person/popular",
+            "GET https://api.themoviedb.org/3/person/{person_id}"
+        ],
+        "api_list": [
+            "GET_person_popular",
+            "GET_person_person_id",
+            "GET_movie_movie_id_similar",
+            "GET_tv_tv_id_images",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_credit_credit_id",
+            "GET_person_person_id_tv_credits",
+            "GET_movie_upcoming",
+            "GET_search_company",
+            "GET_movie_movie_id_reviews",
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_tv_on_the_air",
+            "GET_search_collection",
+            "GET_tv_tv_id_reviews",
+            "GET_tv_tv_id_season_season_number",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_person_person_id_movie_credits",
+            "GET_discover_movie"
+        ],
+        "qid": "q81"
+    },
+    {
+        "query": "give me a poster of the second season of Big Bang Theory",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_images"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/season/{season_number}/images"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_movie_now_playing",
+            "GET_movie_movie_id_similar",
+            "GET_network_network_id",
+            "GET_movie_popular",
+            "GET_person_popular",
+            "GET_person_person_id_movie_credits",
+            "GET_genre_movie_list",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_company_company_id_images",
+            "GET_tv_latest",
+            "GET_search_company",
+            "GET_movie_top_rated",
+            "GET_tv_tv_id_similar",
+            "GET_tv_tv_id_reviews",
+            "GET_movie_movie_id_images",
+            "GET_movie_upcoming",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_collection_collection_id_images"
+        ],
+        "qid": "q82"
+    },
+    {
+        "query": "What is the name of the third episode of the second season of Mandalorian?",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_episode_episode_number"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/season/{season_number}/episode/{episode_number}"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_genre_tv_list",
+            "GET_company_company_id_images",
+            "GET_tv_tv_id_season_season_number",
+            "GET_search_person",
+            "GET_tv_tv_id_reviews",
+            "GET_movie_upcoming",
+            "GET_tv_on_the_air",
+            "GET_person_person_id",
+            "GET_movie_top_rated",
+            "GET_movie_movie_id_release_dates",
+            "GET_movie_movie_id_reviews",
+            "GET_network_network_id_images",
+            "GET_movie_movie_id_images",
+            "GET_tv_popular",
+            "GET_search_movie",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_person_popular"
+        ],
+        "qid": "q83"
+    },
+    {
+        "query": "When is the birthday of the lead actor of the movie The Shawshank Redemptionn?",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits",
+            "GET_person_person_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/credits",
+            "GET https://api.themoviedb.org/3/person/{person_id}"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits",
+            "GET_person_person_id",
+            "GET_tv_tv_id",
+            "GET_movie_now_playing",
+            "GET_search_tv",
+            "GET_movie_upcoming",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_search_person",
+            "GET_tv_tv_id_keywords",
+            "GET_company_company_id",
+            "GET_tv_airing_today",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_tv_on_the_air",
+            "GET_movie_movie_id_recommendations",
+            "GET_tv_popular",
+            "GET_person_person_id_images",
+            "GET_review_review_id",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_movie_movie_id"
+        ],
+        "qid": "q84"
+    },
+    {
+        "query": "When is the birthday of the director of the movie The Shawshank Redemption?",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits",
+            "GET_person_person_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/credits",
+            "GET https://api.themoviedb.org/3/person/{person_id}"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits",
+            "GET_person_person_id",
+            "GET_credit_credit_id",
+            "GET_movie_movie_id",
+            "GET_person_person_id_tv_credits",
+            "GET_search_person",
+            "GET_search_collection",
+            "GET_company_company_id",
+            "GET_discover_tv",
+            "GET_movie_popular",
+            "GET_collection_collection_id",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_tv_top_rated",
+            "GET_tv_tv_id",
+            "GET_network_network_id_images",
+            "GET_genre_tv_list",
+            "GET_movie_latest",
+            "GET_movie_now_playing",
+            "GET_search_company"
+        ],
+        "qid": "q85"
+    },
+    {
+        "query": "Where is the headquarter of the company that created the movie The Shawshank Redemption?",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id",
+            "GET_company_company_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}",
+            "GET https://api.themoviedb.org/3/company/{company_id}"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id",
+            "GET_company_company_id",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_trending_media_type_time_window",
+            "GET_tv_tv_id_images",
+            "GET_person_person_id_images",
+            "GET_movie_movie_id_similar",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_network_network_id_images",
+            "GET_tv_latest",
+            "GET_movie_now_playing",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_credit_credit_id",
+            "GET_discover_movie",
+            "GET_movie_upcoming",
+            "GET_search_collection",
+            "GET_tv_tv_id_season_season_number",
+            "GET_movie_movie_id_reviews"
+        ],
+        "qid": "q86"
+    },
+    {
+        "query": "Where is the headquarter of the company that created the collection Star Wars?",
+        "solution": [
+            "GET_search_collection",
+            "GET_collection_collection_id",
+            "GET_company_company_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/collection",
+            "GET https://api.themoviedb.org/3/collection/{collection_id}",
+            "GET https://api.themoviedb.org/3/company/{company_id}"
+        ],
+        "api_list": [
+            "GET_search_collection",
+            "GET_collection_collection_id",
+            "GET_company_company_id",
+            "GET_movie_top_rated",
+            "GET_movie_movie_id",
+            "GET_tv_tv_id_reviews",
+            "GET_movie_upcoming",
+            "GET_network_network_id_images",
+            "GET_tv_tv_id_images",
+            "GET_movie_popular",
+            "GET_credit_credit_id",
+            "GET_tv_tv_id_credits",
+            "GET_person_person_id",
+            "GET_tv_tv_id_recommendations",
+            "GET_search_person",
+            "GET_collection_collection_id_images",
+            "GET_tv_popular",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_trending_media_type_time_window"
+        ],
+        "qid": "q87"
+    },
+    {
+        "query": "Who has an earlier release date, The Double Life of Veronique or Mulholland Drive?",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id",
+            "GET_credit_credit_id",
+            "GET_tv_tv_id_recommendations",
+            "GET_movie_movie_id_keywords",
+            "GET_movie_movie_id_reviews",
+            "GET_movie_latest",
+            "GET_genre_movie_list",
+            "GET_trending_media_type_time_window",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_search_tv",
+            "GET_tv_tv_id_images",
+            "GET_tv_on_the_air",
+            "GET_tv_latest",
+            "GET_company_company_id",
+            "GET_movie_movie_id_similar",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_tv_tv_id_reviews",
+            "GET_tv_tv_id_season_season_number",
+            "GET_movie_movie_id_images"
+        ],
+        "qid": "q88"
+    },
+    {
+        "query": "Is the director of Twin Peaks Season 1 and Mulholland Drive the same person?",
+        "solution": [
+            "GET_search_tv",
+            "GET_search_movie",
+            "GET_movie_movie_id_credits",
+            "GET_tv_tv_id_season_season_number_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/credits",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/season/{season_number}/credits"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_search_movie",
+            "GET_movie_movie_id_credits",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_movie_now_playing",
+            "GET_movie_movie_id_keywords",
+            "GET_tv_on_the_air",
+            "GET_person_person_id_tv_credits",
+            "GET_tv_tv_id_season_season_number",
+            "GET_movie_latest",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_company_company_id_images",
+            "GET_tv_tv_id",
+            "GET_search_company",
+            "GET_tv_tv_id_reviews",
+            "GET_credit_credit_id",
+            "GET_movie_movie_id_reviews",
+            "GET_search_person",
+            "GET_movie_movie_id_recommendations"
+        ],
+        "qid": "q89"
+    },
+    {
+        "query": "Where was the director of Mulholland Drive born?",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits",
+            "GET_person_person_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/credits",
+            "GET https://api.themoviedb.org/3/person/{person_id}"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits",
+            "GET_person_person_id",
+            "GET_movie_movie_id_release_dates",
+            "GET_movie_upcoming",
+            "GET_tv_tv_id_recommendations",
+            "GET_collection_collection_id_images",
+            "GET_tv_top_rated",
+            "GET_review_review_id",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_tv_tv_id_reviews",
+            "GET_tv_tv_id_images",
+            "GET_search_company",
+            "GET_person_person_id_images",
+            "GET_person_popular",
+            "GET_network_network_id",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_movie_movie_id_recommendations",
+            "GET_discover_movie",
+            "GET_movie_movie_id_images"
+        ],
+        "qid": "q90"
+    },
+    {
+        "query": "Is Mulholland Drive in the Top-10 rated list of the TMDB?",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_top_rated"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/top_rated"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_top_rated",
+            "GET_collection_collection_id",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_tv_popular",
+            "GET_movie_upcoming",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_collection_collection_id_images",
+            "GET_trending_media_type_time_window",
+            "GET_tv_tv_id_keywords",
+            "GET_review_review_id",
+            "GET_movie_movie_id_release_dates",
+            "GET_movie_movie_id_reviews",
+            "GET_discover_movie",
+            "GET_search_tv",
+            "GET_person_person_id_movie_credits",
+            "GET_network_network_id",
+            "GET_tv_on_the_air",
+            "GET_person_person_id_tv_credits",
+            "GET_search_collection"
+        ],
+        "qid": "q91"
+    },
+    {
+        "query": "Who directed more movies, Akira Kurosawa or Spielberg?",
+        "solution": [
+            "GET_search_person",
+            "GET_person_person_id_movie_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/person",
+            "GET https://api.themoviedb.org/3/person/{person_id}/movie_credits"
+        ],
+        "api_list": [
+            "GET_search_person",
+            "GET_person_person_id_movie_credits",
+            "GET_tv_latest",
+            "GET_search_collection",
+            "GET_review_review_id",
+            "GET_company_company_id",
+            "GET_tv_tv_id_similar",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_movie_latest",
+            "GET_company_company_id_images",
+            "GET_movie_movie_id_release_dates",
+            "GET_collection_collection_id",
+            "GET_tv_popular",
+            "GET_network_network_id",
+            "GET_tv_tv_id",
+            "GET_movie_now_playing",
+            "GET_search_tv",
+            "GET_tv_tv_id_season_season_number",
+            "GET_tv_tv_id_reviews",
+            "GET_movie_movie_id"
+        ],
+        "qid": "q92"
+    },
+    {
+        "query": "What TV series has the director of Mulholland Drive directed?",
+        "solution": [
+            "GET_search_movie",
+            "GET_person_person_id_tv_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/person/{person_id}/tv_credits"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_person_person_id_tv_credits",
+            "GET_movie_upcoming",
+            "GET_tv_tv_id_reviews",
+            "GET_person_popular",
+            "GET_credit_credit_id",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_credits",
+            "GET_search_collection",
+            "GET_tv_tv_id_images",
+            "GET_movie_popular",
+            "GET_tv_tv_id_credits",
+            "GET_tv_top_rated",
+            "GET_tv_popular",
+            "GET_genre_tv_list",
+            "GET_network_network_id_images",
+            "GET_person_person_id_images",
+            "GET_collection_collection_id_images",
+            "GET_search_tv",
+            "GET_movie_movie_id_recommendations",
+            "GET_tv_tv_id_keywords"
+        ],
+        "qid": "q93"
+    },
+    {
+        "query": "Tell me about actor Scarlett Johansson's birthday",
+        "solution": [
+            "GET_search_person",
+            "GET_person_person_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/person",
+            "GET https://api.themoviedb.org/3/person/{person_id}"
+        ],
+        "api_list": [
+            "GET_search_person",
+            "GET_person_person_id",
+            "GET_tv_popular",
+            "GET_movie_movie_id_credits",
+            "GET_tv_tv_id_reviews",
+            "GET_discover_movie",
+            "GET_tv_top_rated",
+            "GET_movie_movie_id_keywords",
+            "GET_person_person_id_movie_credits",
+            "GET_tv_tv_id_credits",
+            "GET_movie_upcoming",
+            "GET_tv_latest",
+            "GET_movie_popular",
+            "GET_movie_movie_id",
+            "GET_credit_credit_id",
+            "GET_network_network_id_images",
+            "GET_company_company_id",
+            "GET_tv_tv_id_recommendations",
+            "GET_review_review_id",
+            "GET_movie_movie_id_images"
+        ],
+        "qid": "q94"
+    },
+    {
+        "query": "How many seasons of Sword Art Online are there?",
+        "solution": [
+            "GET_search_tv",
+            "GET_tv_tv_id"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}"
+        ],
+        "api_list": [
+            "GET_search_tv",
+            "GET_tv_tv_id",
+            "GET_movie_movie_id_release_dates",
+            "GET_movie_latest",
+            "GET_discover_movie",
+            "GET_tv_tv_id_credits",
+            "GET_movie_movie_id_similar",
+            "GET_trending_media_type_time_window",
+            "GET_credit_credit_id",
+            "GET_company_company_id",
+            "GET_review_review_id",
+            "GET_tv_popular",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_person_person_id_tv_credits",
+            "GET_genre_movie_list",
+            "GET_tv_latest",
+            "GET_collection_collection_id_images",
+            "GET_tv_tv_id_keywords",
+            "GET_movie_movie_id_credits",
+            "GET_person_person_id"
+        ],
+        "qid": "q95"
+    },
+    {
+        "query": "Are Yui Aragaki and Gen Hoshino co-starring in We Married as Job?",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/credits"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits",
+            "GET_search_tv",
+            "GET_person_person_id",
+            "GET_tv_tv_id_reviews",
+            "GET_network_network_id",
+            "GET_tv_tv_id",
+            "GET_tv_tv_id_recommendations",
+            "GET_collection_collection_id",
+            "GET_company_company_id_images",
+            "GET_search_company",
+            "GET_tv_tv_id_images",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_tv_latest",
+            "GET_movie_latest",
+            "GET_person_popular",
+            "GET_tv_tv_id_season_season_number_episode_episode_number",
+            "GET_discover_movie",
+            "GET_credit_credit_id"
+        ],
+        "qid": "q96"
+    },
+    {
+        "query": "Who is older, by how many years, the director of film Barbie or the lead actor of television DEATH NOTE?",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits",
+            "GET_search_tv",
+            "GET_tv_tv_id_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/credits",
+            "GET https://api.themoviedb.org/3/search/tv",
+            "GET https://api.themoviedb.org/3/tv/{tv_id}/credits"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id_credits",
+            "GET_search_tv",
+            "GET_tv_tv_id_credits",
+            "GET_tv_tv_id_images",
+            "GET_tv_tv_id_season_season_number_credits",
+            "GET_tv_on_the_air",
+            "GET_person_person_id_movie_credits",
+            "GET_credit_credit_id",
+            "GET_movie_latest",
+            "GET_movie_movie_id_reviews",
+            "GET_person_popular",
+            "GET_company_company_id",
+            "GET_discover_tv",
+            "GET_genre_tv_list",
+            "GET_discover_movie",
+            "GET_review_review_id",
+            "GET_tv_latest",
+            "GET_tv_tv_id_keywords",
+            "GET_movie_movie_id_release_dates"
+        ],
+        "qid": "q97"
+    },
+    {
+        "query": "Tell me about Katherine LaNasa's latest movie appearance.",
+        "solution": [
+            "GET_search_person",
+            "GET_person_person_id_movie_credits"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/person",
+            "GET https://api.themoviedb.org/3/person/{person_id}/movie_credits"
+        ],
+        "api_list": [
+            "GET_search_person",
+            "GET_person_person_id_movie_credits",
+            "GET_tv_latest",
+            "GET_tv_tv_id_season_season_number_images",
+            "GET_review_review_id",
+            "GET_person_person_id_tv_credits",
+            "GET_search_company",
+            "GET_movie_movie_id",
+            "GET_search_movie",
+            "GET_person_person_id_images",
+            "GET_discover_tv",
+            "GET_tv_tv_id_reviews",
+            "GET_tv_tv_id_keywords",
+            "GET_movie_movie_id_reviews",
+            "GET_search_collection",
+            "GET_tv_on_the_air",
+            "GET_person_person_id",
+            "GET_tv_tv_id_recommendations",
+            "GET_search_tv",
+            "GET_genre_movie_list"
+        ],
+        "qid": "q98"
+    },
+    {
+        "query": "Give me one cover image of the movie Oppenheimer.",
+        "solution": [
+            "GET_search_movie",
+            "GET_movie_movie_id_images"
+        ],
+        "dataset": "tmdb",
+        "url": [
+            "GET https://api.themoviedb.org/3/search/movie",
+            "GET https://api.themoviedb.org/3/movie/{movie_id}/images"
+        ],
+        "api_list": [
+            "GET_search_movie",
+            "GET_movie_movie_id_images",
+            "GET_tv_on_the_air",
+            "GET_search_person",
+            "GET_review_review_id",
+            "GET_tv_latest",
+            "GET_movie_upcoming",
+            "GET_tv_popular",
+            "GET_search_tv",
+            "GET_tv_top_rated",
+            "GET_tv_tv_id_season_season_number_episode_episode_number_images",
+            "GET_search_company",
+            "GET_movie_movie_id_credits",
+            "GET_trending_media_type_time_window",
+            "GET_credit_credit_id",
+            "GET_movie_movie_id_recommendations",
+            "GET_company_company_id_images",
+            "GET_collection_collection_id_images",
+            "GET_search_collection",
+            "GET_movie_movie_id_release_dates"
+        ],
+        "qid": "q99"
+    }
+]
