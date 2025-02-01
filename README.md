@@ -1,10 +1,10 @@
 <div align="center">
-    <h1>AutoTools <img src="assets/logo.png" alt="Logo" width="50px" /></h1>
+   <h1>AutoTools <img src="assets/images/icon.png" alt="Logo" width="30px" height="30"/></h1>
 </div>
 
 
-🔨This project (AutoTools) aims to introduce an automatic framework to enable the large language models (LLMs) as autonomous agents. By integrating the AutoTools,  the LLM automatically transforms tool documentation into callable functions, verifying syntax and runtime correctness, composing these functions into executable programs to solve practical tasks.
-![img.png](./assets/method.png)
+🔧This project (AutoTools) aims to introduce an automatic framework to enable the large language models (LLMs) as autonomous agents. By integrating the AutoTools,  the LLM automatically transforms tool documentation into callable functions, verifying syntax and runtime correctness, composing these functions into executable programs to solve practical tasks.
+![img.png](./assets/images/method.png)
 
 ## News
 
@@ -149,7 +149,7 @@ The demo training data (1,0000) can be found in the `./data` folder.
 
 ### 📊 Model Experiments Results
 
-![img.png](./assets/img.png)
+![img.png](./assets/images/results.png)
 
 
 ## Resource
