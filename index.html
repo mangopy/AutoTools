@@ -1,0 +1,445 @@
+<meta http-equiv="Cache-Control" content="max-age=86400" />
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Tool Learning in the Wild: Empowering Language Models as Automatic Tool Agents">
+  <meta name="keywords" content="MathVista, Math Vista">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tool Learning in the Wild: Empowering Language Models as Automatic Tool Agents</title>
+
+
+  <!-- <link rel="icon" href="./static/images/title.png"> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/leaderboard.css">
+
+ <script type="text/javascript" src="static/js/sort-table.js" defer></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/explorer-index.js"></script>
+  <script src="./static/js/question_card.js"></script>
+
+  <script src="./static/js/leaderboard_testmini.js"></script>  
+  <script src="./data/results/output_folders.js" defer></script>
+  <script src="./data/results/model_scores.js" defer></script>
+
+  <script src="./visualizer/data/data_public.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title is-bold">
+            <!-- <img src="static/images/csbench_logo_2.png" style="width:1em;vertical-align: middle" alt="Logo"/> -->
+            <!-- <span class="csbench" style="vertical-align: middle">CS-Bench</span> -->
+            </h1>
+          <h2 class="title is-3" style="margin-top: 0px; margin-bottom: 50px;">
+            <!-- <img src="static/images/title.png" style="width:1em;vertical-align: middle" alt="Logo"/> -->
+           🔧Tool Learning in the Wild:<br> Empowering Language Models as Automatic Tool Agents
+          </h2>
+            
+          <h2 class="subtitle is-3 publication-subtitle">
+
+            <div class="is-size-5 publication-authors", style="width: 100%; margin: 15px auto;", >
+              <span class="author-block"><a href="https://shizhl.github.io/">Zhengliang Shi</a><sup>1</sup>,</span>
+              <span class="author-block"><a href="https://shengaopku.github.io/">Shen Gao</a><sup>2</sup>,</span>
+              <span class="author-block"><a href="https://yanlingyong.net/">Lingyong Yan</a><sup>3</sup>,</span>
+              <span class="author-block"><a href="https://fengyue-leah.github.io/">Yue Feng</a><sup>4</sup>,</span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=LAeLBYoAAAAJ&hl=zh-CN">Xiuyi Chen</a><sup>3</sup>,</span>
+              <span class="author-block"><a href="https://ir.sdu.edu.cn/~zhuminchen/~zhuminchen_en.htm">Zhumin Chen</a><sup>1</sup>,</span>
+              <span class="author-block"><a href="https://www.yindawei.com/">Dawei Yin</a><sup>3</sup>,</span>
+              <span class="author-block"><a href="https://liacs.leidenuniv.nl/~verbernes/">Suzan Verberne</a><sup>5</sup>,</span>
+              <span class="author-block"><a href="https://renzhaochun.github.io/">Zhaochun Ren</a><sup>5</sup></span>
+          </div>
+  
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup style="color:#ed4b82">1</sup>Shandong University</span>
+              <span class="author-block"><sup style="color:#1a4ebf">2</sup>University of Electronic Science and Technology of China</span><br>
+              <span class="author-block"><sup style="color:#1a4ebf">3</sup>Baidu Inc.</span>
+              <span class="author-block"><sup style="color:#1a4ebf">4</sup>University of Birmingham</span><br>
+              <span class="author-block"><sup style="color:#1a4ebf">5</sup>Leiden University</span><br>
+            </div>
+
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+            
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-light">
+                
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              
+              <!-- PDF Link. -->
+<!--             
+              <span class="link-block">
+                <a href="https://www.alphaxiv.org/abs/2501.05366"
+                   class="external-link button is-normal is-rounded is-light">
+                
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>alphaXiv</span>
+                </a>
+              </span>
+               -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/mangopy/AutoTools"
+                   class="external-link button is-normal is-rounded is-light">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block"> -->
+                <!-- <a href="https://huggingface.co/datasets/xxxxxxx" -->
+                   <!-- class="external-link button is-normal is-rounded is-dark"> -->
+                  <!-- <span class="icon"> -->
+                      <!-- <i class="far fa-images"></i> -->
+                      <!-- <p style="font-size:18px">🤗</p> -->
+                      <!-- 🔗 -->
+                  <!-- </span> -->
+                  <!-- <span>Dataset</span> -->
+                <!-- </a> -->
+              <!-- </span> -->
+              <!-- hf paper Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/spaces/mangopy/autotools"
+                   class="external-link button is-normal is-rounded is-light">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>HF-space</span>
+                </a>
+              </span>
+              
+              <!-- </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="margin-top: 10px; margin-bottom: -100px;"></div>
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- Current Status and Challenges of Reasoning Models. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Brief Introduction</h2>
+        <div class="content has-text-justified">
+          <p>
+            To integrate LLMs with tools, most previous work represents diverse tool-calling actions as special tokens, integrate these tokens into the text generation process of LLMs, and guide LLMs by specific tool-use workflows. However, these methods usually suffer from two challenges in realistic scenarios.
+           First, it requires intensive expertise to effectively parse tool documentation and create  examples to cover diverse usage, struggling to scale to large toolsets in practical applications. Consequently, LLMs show diminished performance when in-context examples are incomplete or missing, which potentially limits the scope of available tools to LLMs. 
+           Second, it is ad-hoc to manually define the tool-use workflow (e.g., step-by-step procedure and tool-calling format) for LLM, showing limited generalization to diverse tool specifications and restricting their flexibility in integrating multiple tools dynamically in a once tool-calling action.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="box m-5">
+      <div class="content has-text-centered">
+        <img src="static/images/intro.png" alt="geometric reasoning" style="width:84%; height:200; object-fit: contain; margin-top: 20px; margin-bottom: 20px;"/>
+        <p style="margin-top: 10px;">
+          Comparison between conventional tool-use flow (a) and the proposed framework (b). 
+        </p>
+      </div>
+    </div>
+    <!--/ Current Status and Challenges of Reasoning Models. -->
+  </div>
+</section>
+
+<!-- <section class="section">
+  <div class="container" style="margin-top: 10px; margin-bottom: -100px;"></div>
+  <div class="container" style="margin-bottom: 2vh;">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            In this work, we propose AutoTools, a framework that enables LLMs to automate the tool-use workflow. Specifically, the LLM automatically transforms tool documentation into callable functions, verifying syntax and runtime correctness. Then, the LLM integrates these functions into executable programs to solve practical tasks, flexibly grounding tool-use actions into its reasoning processes. Extensive experiments on a wide range of benchmarks illustrate the superiority of our framework. 
+          </p>
+          <p>
+            Inspired by these promising results, we further investigate how to improve the expertise of LLMs, especially open-source LLMs with fewer parameters, within AutoTools. Thus, we propose the AutoTools-Learning approach, training the LLMs with three learning tasks on 34k instances of high-quality synthetic data, including documentation understanding, relevance learning and function programming. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="section">
+  <div class="container" style="margin-top: -10vh;">
+    <!-- Search-o1: An Autonomous Knowledge Retrieval-Augmented Reasoning Framework. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3">Search-o1: An Autonomous Knowledge Retrieval-Augmented Reasoning Framework</h2> -->
+        <div class="content has-text-justified">
+          <p>
+            In this work, we enquiry: Can we empower LLMs to automate tool-use flow and effectively manipulate diverse tools?
+          </p>
+          <p>
+            To achieve this, we propose a novel framework named AutoTools, which diverges from previous work by enabling LLMs as agents to automate tool-use workflow. AutoTools consists of two stages: (1) Tool Encapsulation and (2) Tool Programming.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Search-o1 Framework. -->
+  </div>
+</section>
+
+
+
+<!-- DATASET SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 csbench">
+    <!-- <img src="static/images/csbench_logo_2.png" style="width:1.5em;vertical-align: middle" alt="Logo"/> -->
+    <span class="csbench" style="width:1.5em;vertical-align: middle">Our AutoTools Framework</span>
+  </h1>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- Comparative Analysis of Approaches. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3">Comparative Analysis of Approaches</h2> -->
+        <div class="content has-text-justified">
+          <p>
+            Different from the handcrafted and ad-hoc tool-use workflow, the proposed AutoTools consists of two main steps:
+          </p>
+          <ul>
+            <li>
+              <strong>Tool Encapsulation</strong>  In the Tool Encapsulation stage, we automatically transforms the toolset into a list of well-structured, callable functions with generated demonstrations.
+              Specifically, for each tool, the LLM is provided with its raw documentation and is induced to encapsulate it into a callable function. To verify the correctness, besides the syntax compilation, the LLM is stimulated to generate function-calling instances for each function to test the runtime correctness.
+            </li>
+            <li>
+              <strong>Tool Programming</strong> In the Tool Programming stage, the LLM is prompted to read the encapsulated functions
+              and flexibly integrate them through a unified programming language (e.g., Python).
+              Concretely, we first load the encapsulated functions to initialize an execution environment.
+              Then, the LLM is equipped with the created function library and generates executable programs as a solution.
+              The programs sequentially call a chain of functions, parse useful intermediates to resolve input-output dependencies among functions, and ultimately derive the final answer.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--/ Comparative Analysis of Approaches. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container" style="margin-top: -130px; margin-bottom: -70px;">
+    <div class="columns is-centered">
+      <div class="column is-full content">
+        <!-- 案例研究 1 -->
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="static/images/method.png" alt="geometric reasoning" style="width:90%;object-fit: contain; margin-top: 5px; margin-bottom: 5;"/>
+            <p style="margin-top: 5px;">
+              An overview of the proposed framework AutoTools, in which the LLM (1) automatically encapsulates diverse tools into unified callable functions and (2) directly utilizes these functions through programming.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- DATASET SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 csbench">
+    <!-- <img src="static/images/csbench_logo_2.png" style="width:1.5em;vertical-align: middle" alt="Logo"/> -->
+    <span class="csbench" style="width:1.5em;vertical-align: middle">Further improvement with AutoTools-Learning</span>
+  </h1>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- Inference for a Single Question -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3">Inference for a Single Question</h2> -->
+        <div class="content has-text-justified">
+          <p>
+            We further investigate how to improve the LLM's expertise within AutoTools, especially for LLMs with fewer parameters. We propose AutoTools-learning, a multi-task learning approach that trains the LLM as an automated tool agent from synthetic datasets. We design three core learning tasks: (1) documentation understanding, where the LLM is trained to parse diverse tool documentation and generate structured functions; (2) relevance learning, where the LLM learns to select relevant tools based on a query and a candidate tool list; and (3) function learning, where we optimize the LLM to call in-context functions and solve practical queries. To enable this learning process, we filter and synthesize training data from large-scale public resources for each task, transforming it into a unified format. This enables us to collect high-quality examples without intensive human annotation.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Batch Inference Mechanism -->
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 csbench">
+    <!-- <img src="static/images/csbench_logo_2.png" style="width:1.5em;vertical-align: middle" alt="Logo"/> -->
+    <span class="csbench" style="width:1.5em;vertical-align: middle">Experimental Results</span>
+  </h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            We evaluated the proposed AutoTools on ToolBench, RestBench and a newly-collected benchmark, i.e., AutoTools-Eval.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Batch Inference Mechanism -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container" style="margin-top: -120px; margin-bottom: -100px;">
+    <div class="columns is-centered">
+      <div class="column is-full content">
+        <!-- 案例研究 1 -->
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="static/images/results.png" alt="geometric reasoning" style="width:70%; height:400px; object-fit: contain; margin-top: -40px; margin-bottom: -20px;"/>
+          </div>
+        </div>
+        
+        <!-- 案例研究 2 -->
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="static/images/result1.png" alt="geometric reasoning" style="width:84%; height:380px; object-fit: contain; margin-top: 20px; margin-bottom: 20px;"/>
+          </div>
+        </div>
+        
+        <!-- 案例研究 3 -->
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="static/images/result2.png" alt="geometric reasoning" style="width:70%; height:400px; object-fit: contain; margin-top: 20px; margin-bottom: 20px;"/>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<br>
+
+
+
+<!-- RESULTS SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 csbench">Case Study</h1>
+  </div>
+</section>
+        
+<section class="section">
+  <div class="container" style="margin-top: -50px; margin-bottom: -80px;">
+    <div class="columns is-centered">
+      <div class="column is-full content">
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <p style="margin-top: -10px;">
+             GIven the documentation of the "SEARCH_TOOL" APIs (tool) in natural language, the LLM can understand and encapsulate it into a structured function.
+            </p>
+            <img src="static/images/case.png" alt="geometric reasoning" style="width:84%; height:900px; object-fit: contain; margin-top: -70px; margin-bottom: -30px;"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- @PAN TODO: bibtex -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3 has-text-centered">Citation</h2>
+    <pre><code>@inproceedings{autotools,
+	title     = {Tool Learning in the Wild: Empowering Language Models as Automatic Tool Agents},
+	author    = {Zhengliang Shi, Shen Gao, Lingyong Yan, Yue Feng, Xiuyi Chen, Zhumin Chen, Dawei Yin, Suzan Verberne, Zhaochun Ren},
+	year      = 2025,
+	booktitle = {WWW}
+}
+</code></pre>
+  </div>
+</section>
+
+
+</section>
+
+
+<footer class="footer">
+  <!-- <div class="container"> -->
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is website adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://csbench.github.io/">CS-Bench</a> and <a href="https://Mathvista.github.io/">MathVista</a>, licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+</footer>
+
+</body>
+</html>
