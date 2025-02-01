@@ -16,7 +16,7 @@ import logging
 logger = logging.getLogger()
 
 def calculate_probability(cumulative_logprob):
-    """根据累积对数概率计算生成概率"""
+    """"""
     probability = math.exp(cumulative_logprob)
     return probability
 
@@ -32,21 +32,6 @@ def remove_duplicate(response):
         if c not in new_response:
             new_response.append(c)
     return new_response
-
-# def extract_numbers_from_ordered_brackets(text):
-#     text = text.strip()
-#     if text!="" and text[0] != '[':
-#         text = '[' + text
-#     # 更新正则表达式模式：允许方括号内的数字前后有空格
-#     pattern = r'\[\s*(\d+)\s*\]'
-
-#     # 使用 re.findall 查找所有匹配
-#     matches = re.findall(pattern, text)
-
-#     # 将匹配的字符串数字转换为整数并返回  
-#     rank = [int(match) for match in matches]
-#     return remove_duplicate(rank)
-
 
 def extract_numbers_from_ordered_brackets(text: str):
     new_response = ''
@@ -102,11 +87,6 @@ def write_file(data, filename, num_processes=20, default_name='train', indent=4)
     if filename is None:
         print(f"targeted file is None")
         return False
-    # output_folder = os.path.dirname(filename)
-    # if os.path.exists(output_folder) == False:
-    #     print(f'create the output folder: {output_folder}')
-    #     os.makedirs(output_folder, exist_ok=True)
-
     print(f"================== begin to write data to {filename} ==================")
     if filename.endswith('.json'):
         json.dump(data, open(filename, 'w'), indent=indent, ensure_ascii=False)

@@ -6,7 +6,11 @@
 🔨This project (AutoTools) aims to introduce an automatic framework to enable the large language models (LLMs) as autonomous agents. By integrating the AutoTools,  the LLM automatically transforms tool documentation into callable functions, verifying syntax and runtime correctness, composing these functions into executable programs to solve practical tasks.
 ![img.png](./assets/method.png)
 
+## News
 
+- **[2025.1.20]** Our paper has been accepted by the [THE WEB CONFERENCE 2025](https://www2025.thewebconf.org/) (WWW2025) 🎉🎉🎉.
+- **[2024. 12.7 ]** Our code was released, including main code for inference and supervised fine-tuning.
+- **[2024.5.26]** Our paper has been released in arxiv. See our paper in this [link](https://arxiv.org/abs/2405.16533).
 
 ## Quick start for AutoTools
 
@@ -146,3 +150,28 @@ The demo training data (1,0000) can be found in the `./data` folder.
 ### 📊 Model Experiments Results
 
 ![img.png](./assets/img.png)
+
+
+## Resource
+
+The training dataset of the three learning tasks in AutoTools-learning can be downloaded from the following link.
+
+| Learning task         | Note                                                                                              |       Link       |
+|:----------------------|:--------------------------------------------------------------------------------------------------|:----------------:|
+| Tool Understanding  | learning to encapsulate tool documentation in natural language into python functions.             | [Google drive](https://drive.google.com/file/d/1uYIwG1Qj0ut7A1mtjlyKVc_leCOa7hv2/view?usp=sharing) |
+| Relevance Learning  | learning to select target tools by generating their identifiers, i.e., tool name.                 | [Google drive](https://drive.google.com/file/d/1qhhe3dviPSTynfbkvlxBhF6-Fk1_VaNx/view?usp=sharing) |
+| Function Learning   | learning to programmatically use pre-encapsulated tools for task-solving.                         | [Google drive](https://drive.google.com/file/d/1AOcOh1OzvBJI_J0R3G5DWDtGIB4BC8-p/view?usp=sharing) |
+
+## Acknowledgement
+We sincerely thank prior work, such as [CodeAct](https://github.com/xingyaoww/code-act) and [Llama-Factory](https://github.com/hiyouga/LLaMA-Factory/tree/main), which inspire this project or provide strong technique reference.
+
+## Citation
+```text
+@inproceedings{autotools,
+	title     = {Tool Learning in the Wild: Empowering Language Models as Automatic Tool Agents},
+	author    = {Zhengliang Shi, Shen Gao, Lingyong Yan, Yue Feng, Xiuyi Chen, Zhumin Chen, Dawei Yin, Suzan Verberne, Zhaochun Ren},
+	year      = 2025,
+	booktitle = {WWW}
+}
+```
+
