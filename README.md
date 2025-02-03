@@ -162,6 +162,10 @@ The training dataset of the three learning tasks in AutoTools-learning can be do
 | Relevance Learning  | learning to select target tools by generating their identifiers, i.e., tool name.                 | [Google drive](https://drive.google.com/file/d/1qhhe3dviPSTynfbkvlxBhF6-Fk1_VaNx/view?usp=sharing) |
 | Function Learning   | learning to programmatically use pre-encapsulated tools for task-solving.                         | [Google drive](https://drive.google.com/file/d/1AOcOh1OzvBJI_J0R3G5DWDtGIB4BC8-p/view?usp=sharing) |
 
+## Todo
+- [ ] More details about the experiments will be released
+- [ ] The AutoTools-Eval is on the way!
+
 ## Acknowledgement
 We sincerely thank prior work, such as [CodeAct](https://github.com/xingyaoww/code-act) and [Llama-Factory](https://github.com/hiyouga/LLaMA-Factory/tree/main), which inspire this project or provide strong technique reference.
 
