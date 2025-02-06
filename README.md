@@ -165,6 +165,7 @@ The training dataset of the three learning tasks in AutoTools-learning can be do
 ## Todo
 - [ ] More details about the experiments will be released
 - [ ] The AutoTools-Eval is on the way!
+- [ ] Model checkpoint will be available on Huggingface!
 
 ## Acknowledgement
 We sincerely thank prior work, such as [CodeAct](https://github.com/xingyaoww/code-act) and [Llama-Factory](https://github.com/hiyouga/LLaMA-Factory/tree/main), which inspire this project or provide strong technique reference.
