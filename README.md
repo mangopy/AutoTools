@@ -163,6 +163,7 @@ The training dataset of the three learning tasks in AutoTools-learning can be do
 | Function Learning   | learning to programmatically use pre-encapsulated tools for task-solving.                         | [Google drive](https://drive.google.com/file/d/1AOcOh1OzvBJI_J0R3G5DWDtGIB4BC8-p/view?usp=sharing) |
 
 ## Todo
+- [ ] Since we re-encapsulate our code, we will fix some bugs occured in this version.
 - [ ] More details about the experiments will be released
 - [ ] The AutoTools-Eval is on the way!
 - [ ] Model checkpoint will be available on Huggingface!
