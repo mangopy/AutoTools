@@ -108,7 +108,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7   nohup torchrun  --nproc_per_node=8 --mast
 You can also set the `resume_from_checkpoint` to restart your training from previous checkpoint.
 
 ## A New Benchmark -- AutoTools-Eval
-In our work, we provide a more challenging benchmark to evaluate our framework under more complex scenarios. The tools in our dataset can be found in the './tools' dataset.  The evaluation example can also be found in `./data` folder. 
+In our work, we provide a more challenging benchmark to evaluate our framework under more complex scenarios. The tools in our dataset can be found in the `./tools` dataset.  The evaluation example can also be found in `./data` folder. 
 
 A concrete example for our evaluation dataset.
 ```json
@@ -142,10 +142,10 @@ A concrete example for our evaluation dataset.
 
 ## Training data for AutoTools-Learning
 
-We collect 7,243/12, 251/14,689 examples for the tool understanding, relevance learning, and function learning tasks in our AutoTools-Learning method.
+We collect training examples for the tool understanding, relevance learning, and function learning tasks in our AutoTools-Learning method.
 To ensure data quality, we apply strict filtering strategies, such as removing examples with empty tool responses, unsolvable queries, or incorrect tool-calling parameters. 
 We also reformat these datasets into a unified interactive format. Each formatted example begins with a system instruction describing the task and initial input, followed by interactions between two roles: the user and the LLM, or the LLM and the execution environment.
-The demo training data (1,0000) can be found in the `./data` folder.
+The demo training data can be found in the `./data` folder.
 
 ### 📊 Model Experiments Results
 
