@@ -8,9 +8,9 @@
 
 ## News
 
-- **[2025.1.20]** The second version of our paper has been accepted by the [THE WEB CONFERENCE 2025](https://www2025.thewebconf.org/) (WWW2025) 🎉🎉🎉.
+- **[2025.1.20]** The second version of our paper has been accepted by the [THE WEB CONFERENCE 2025](https://www2025.thewebconf.org/) (WWW2025) 🎉🎉🎉. See our [paper](https://arxiv.org/abs/2405.16533) for more details.
 - **[2024. 12.7 ]** Our code was released, including main code for inference and supervised fine-tuning.
-- **[2024.5.26]** The first version of our paper has been released in arxiv. See our paper in this [link](https://arxiv.org/abs/2405.16533).
+- **[2024.5.26]** The first version of our paper has been released in arxiv. See our paper in this [link](https://arxiv.org/abs/2405.16533v1).
 
 ## Quick start for AutoTools
 
